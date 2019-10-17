@@ -22,6 +22,7 @@ group("root") {
     "//src:hafnium(:qemu_aarch64_clang)",
     "//src:hafnium(:rpi4_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_clang)",
+    "//src:hafnium(:secure_aem_v8a_fvp_clang)",
   ]
 }
 
@@ -33,14 +34,18 @@ group("test_root") {
     "//test/arch(:aem_v8a_fvp_clang)",
     "//test/arch(:qemu_aarch64_clang)",
     "//test/arch(:rpi4_clang)",
+    "//test/arch(:secure_aem_v8a_fvp_clang)",
     "//test/linux(:aem_v8a_fvp_vm_clang)",
     "//test/linux(:qemu_aarch64_vm_clang)",
     "//test/linux(:rpi4_vm_clang)",
+    "//test/linux(:secure_aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vm_clang)",
     "//test/vmapi(:rpi4_vm_clang)",
+    "//test/vmapi(:secure_aem_v8a_fvp_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_aem_v8a_fvp_vm_clang)",
   ]
 }
 
@@ -53,9 +58,27 @@ host_toolchain("host_fake") {
   max_vms = 6
 }
 
+aarch64_toolchains("secure_aem_v8a_fvp") {
+  cpu = "cortex-a57"
+  origin_address = "0x06000000"
+  boot_flow = "//src/boot_flow:linux"
+  console = "//src/arch/aarch64/pl011"
+  iommu = "//src/iommu:absent"
+  gic_version = 3
+  gicd_base_address = "0x2f000000"
+  gicr_base_address = "0x2f100000"
+  heap_pages = 60
+  max_cpus = 8
+  max_vms = 16
+  toolchain_args = {
+    secure_world = "1"
+    pl011_base_address = "0x1c090000"
+  }
+}
+
 aarch64_toolchains("aem_v8a_fvp") {
   cpu = "cortex-a57"
-  origin_address = "0x80000000"
+  origin_address = "0x88000000"
   boot_flow = "//src/boot_flow:linux"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
