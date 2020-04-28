@@ -14,6 +14,7 @@ group("root") {
     "//src:hafnium(:qemu_aarch64_clang)",
     "//src:hafnium(:rpi4_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_clang)",
+    "//src:hafnium(:secure_tc0_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_clang)",
   ]
 }
@@ -27,17 +28,21 @@ group("test_root") {
     "//test/arch(:qemu_aarch64_clang)",
     "//test/arch(:rpi4_clang)",
     "//test/arch(:secure_aem_v8a_fvp_clang)",
+    "//test/arch(:secure_tc0_clang)",
     "//test/linux(:aem_v8a_fvp_vm_clang)",
     "//test/linux(:qemu_aarch64_vm_clang)",
     "//test/linux(:rpi4_vm_clang)",
     "//test/linux(:secure_aem_v8a_fvp_vm_clang)",
+    "//test/linux(:secure_tc0_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vm_clang)",
     "//test/vmapi(:rpi4_vm_clang)",
     "//test/vmapi(:secure_aem_v8a_fvp_vm_clang)",
+    "//test/vmapi(:secure_tc0_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_aem_v8a_fvp_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_tc0_vm_clang)",
   ]
 }
 
@@ -134,5 +139,31 @@ aarch64_toolchains("android_aarch64") {
   max_vms = 16
   toolchain_args = {
     pl011_base_address = "0x09000000"
+  }
+}
+
+# The Total Compute platform provides an envelope for all of Arm's latest IP.
+# TC0 is a reference open source software stack for the first version of the
+# Total Compute Fixed Virtual Platform (FVP). More info at:
+# https://community.arm.com/developer/tools-software/oss-platforms/w/docs/606/total-compute
+# https://git.linaro.org/landing-teams/working/arm/arm-reference-platforms.git/about/docs/tc0/user-guide.rst
+#
+# Secure hafnium build for tc0 platform. This builds reference Secure Partition
+# Manager (SPM) for tc0 with Armv8.4-A Secure-EL2 extension.
+aarch64_toolchains("secure_tc0") {
+  cpu = "cortex-a57"
+  origin_address = "0xfd000000"
+  boot_flow = "//src/boot_flow:linux"
+  console = "//src/arch/aarch64/pl011"
+  iommu = "//src/iommu:absent"
+  gic_version = 3
+  gicd_base_address = "0x30000000"
+  gicr_base_address = "0x30140000"
+  heap_pages = 60
+  max_cpus = 4
+  max_vms = 16
+  toolchain_args = {
+    secure_world = "1"
+    pl011_base_address = "0x7ff80000"
   }
 }
