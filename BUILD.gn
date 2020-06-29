@@ -31,8 +31,8 @@ group("test_root") {
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vm_clang)",
     "//test/vmapi(:rpi4_vm_clang)",
-    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vm_clang)",
-    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3__test(:aem_v8a_fvp_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3__test(:qemu_aarch64_vm_clang)",
   ]
 }
 
