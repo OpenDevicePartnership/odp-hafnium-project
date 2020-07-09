@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb1e752e_80643328",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000309
+      },
+      "writtenOn": "2020-07-09T14:24:50Z",
+      "side": 1,
+      "message": "This looks unrelated, maybe it should be in a separate commit? And does it break the FVP tests?",
+      "revId": "5428c0ceacb12edef737680e53b10b854376f0a9",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda",
+      "unresolved": true
+    }
+  ]
+}
