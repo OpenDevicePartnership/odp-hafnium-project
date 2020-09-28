@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "51c50568_4e3d2416",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 1000309
+      },
+      "writtenOn": "2020-09-28T13:19:27Z",
+      "side": 1,
+      "message": "Can you add a comment here explaining what tc0 is? I haven\u0027t heard of it before.",
+      "revId": "109b5e6e2357a80239d369426374fa083a370d94",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda",
+      "unresolved": true
+    }
+  ]
+}
