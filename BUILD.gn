@@ -60,7 +60,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   origin_address = "0x06000000"
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
-  iommu = "//src/iommu:absent"
+  iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
@@ -72,6 +72,8 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
     secure_world = "1"
     pl011_base_address = "0x1c090000"
     hftest_ctrl = "//test/hftest:ctrl_uart"
+    smmu_base_address = "0x2b400000"
+    smmu_memory_size = "0x100000"
   }
 }
 
@@ -80,7 +82,7 @@ aarch64_toolchains("aem_v8a_fvp") {
   origin_address = "0x80000000"
   boot_flow = "//src/boot_flow:linux"
   console = "//src/arch/aarch64/pl011"
-  iommu = "//src/iommu:absent"
+  iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
@@ -89,6 +91,8 @@ aarch64_toolchains("aem_v8a_fvp") {
   max_vms = 16
   toolchain_args = {
     pl011_base_address = "0x1c090000"
+    smmu_base_address = "0x2b400000"
+    smmu_memory_size = "0x100000"
   }
 }
 
