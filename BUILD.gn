@@ -162,7 +162,7 @@ aarch64_toolchains("secure_tc0") {
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x30140000"
   heap_pages = 60
-  max_cpus = 4
+  max_cpus = 8
   max_vms = 16
   toolchain_args = {
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
