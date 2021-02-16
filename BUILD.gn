@@ -67,6 +67,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   heap_pages = 60
   max_cpus = 8
   max_vms = 16
+  branch_protection = "standard"
   toolchain_args = {
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     plat_interrupts = "//src/arch/aarch64/plat/interrupts:gicv3"
@@ -165,6 +166,7 @@ aarch64_toolchains("secure_tc0") {
   heap_pages = 60
   max_cpus = 8
   max_vms = 16
+  branch_protection = "standard"
   toolchain_args = {
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     plat_interrupts = "//src/arch/aarch64/plat/interrupts:gicv3"
