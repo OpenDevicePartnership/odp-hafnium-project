@@ -69,6 +69,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   max_vms = 16
   branch_protection = "standard"
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     plat_interrupts = "//src/arch/aarch64/plat/interrupts:gicv3"
     plat_prng = "//src/arch/aarch64/plat/prng:prng"
@@ -93,6 +94,7 @@ aarch64_toolchains("aem_v8a_fvp") {
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
+    plat_ffa =  "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x1c090000"
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
@@ -127,6 +129,7 @@ aarch64_toolchains("rpi4") {
   max_cpus = 4
   max_vms = 16
   toolchain_args = {
+    plat_ffa =  "//src/arch/aarch64/plat/ffa:hypervisor"
     gpio_base_address = "0xfe200000"
     aux_base_address = "0xfe215000"
     core_freq_mhz = 500
@@ -173,6 +176,7 @@ aarch64_toolchains("secure_tc0") {
   max_vms = 16
   branch_protection = "standard"
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     plat_interrupts = "//src/arch/aarch64/plat/interrupts:gicv3"
     plat_prng = "//src/arch/aarch64/plat/prng:prng"
