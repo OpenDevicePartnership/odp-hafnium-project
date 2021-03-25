@@ -68,6 +68,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     secure_world = "1"
     pl011_base_address = "0x1c090000"
@@ -88,6 +89,7 @@ aarch64_toolchains("aem_v8a_fvp") {
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x1c090000"
   }
 }
@@ -105,6 +107,7 @@ aarch64_toolchains("qemu_aarch64") {
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x09000000"
   }
 }
@@ -124,6 +127,7 @@ aarch64_toolchains("rpi4") {
     aux_base_address = "0xfe215000"
     core_freq_mhz = 500
     hftest_ctrl = "//test/hftest:ctrl_uart"
+    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
   }
 }
 
@@ -140,6 +144,7 @@ aarch64_toolchains("android_aarch64") {
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x09000000"
   }
 }
@@ -165,6 +170,7 @@ aarch64_toolchains("secure_tc0") {
   max_cpus = 4
   max_vms = 16
   toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     secure_world = "1"
     pl011_base_address = "0x7ff80000"
