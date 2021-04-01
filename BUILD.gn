@@ -160,7 +160,7 @@ aarch64_toolchains("secure_tc0") {
   iommu = "//src/iommu:absent"
   gic_version = 3
   gicd_base_address = "0x30000000"
-  gicr_base_address = "0x30140000"
+  gicr_base_address = "0x30080000"
   heap_pages = 60
   max_cpus = 8
   max_vms = 16
