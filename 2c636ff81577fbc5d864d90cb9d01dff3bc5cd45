@@ -1,0 +1,8 @@
+Code-Review+2: Olivier Deprez <olivier.deprez@arm.com>
+Code-Review+1: Mark Dykes <mark.dykes@arm.com>
+Code-Review+1: Madhukar Pappireddy <madhukar.pappireddy@arm.com>
+Submitted-by: Olivier Deprez <olivier.deprez@arm.com>
+Submitted-at: Thu, 15 Apr 2021 13:59:24 +0200
+Reviewed-on: https://review.trustedfirmware.org/c/hafnium/project/reference/+/9583
+Project: hafnium/project/reference
+Branch: refs/heads/master
