@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "059c038a_31b0427e",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2021-04-15T09:45:07Z",
+      "side": 1,
+      "message": "Should this be updated to the arm gitlab link e.g.\nhttps://gitlab.arm.com/arm-reference-solutions/arm-reference-solutions-docs/-/blob/master/docs/totalcompute/tc0/user-guide.rst",
+      "range": {
+        "startLine": 152,
+        "startChar": 2,
+        "endLine": 152,
+        "endChar": 108
+      },
+      "revId": "51e81576864d8f6bb39eba5d71aea2c7b7b5b35e",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
