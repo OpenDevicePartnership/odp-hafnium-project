@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ef071743_9164c5d2",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2021-06-16T15:09:59Z",
+      "side": 1,
+      "message": "doesnt this only enable BTI for hafnium itself? The _vm_* toolchains for tests dont include branch protection(which is a change i will push eventually based on the email exchange we had for EL0 VHE partitions running on hafnium with VHE enabled)",
+      "parentUuid": "71fd29c6_7162a384",
+      "range": {
+        "startLine": 111,
+        "startChar": 2,
+        "endLine": 111,
+        "endChar": 32
+      },
+      "revId": "51bb7a0f13652cbc32c34fb2b69bf36c8fd7d790",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d8b81cd0_0cff5f0e",
         "filename": "qemu_aarch64_vhe/BUILD.gn",
         "patchSetId": 1
@@ -37,6 +61,30 @@
       "writtenOn": "2021-06-16T13:23:32Z",
       "side": 1,
       "message": "nit: 2021",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 16
+      },
+      "revId": "51bb7a0f13652cbc32c34fb2b69bf36c8fd7d790",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52224032_38536f0e",
+        "filename": "qemu_aarch64_vhe/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2021-06-16T15:09:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "d8b81cd0_0cff5f0e",
       "range": {
         "startLine": 1,
         "startChar": 12,
@@ -60,6 +108,30 @@
       "writtenOn": "2021-06-16T13:23:32Z",
       "side": 1,
       "message": "nit: 2021",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 16
+      },
+      "revId": "51bb7a0f13652cbc32c34fb2b69bf36c8fd7d790",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "259e7eb9_3989dcee",
+        "filename": "secure_aem_v8a_fvp_vhe/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2021-06-16T15:09:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "61c50384_032ca5af",
       "range": {
         "startLine": 1,
         "startChar": 12,
