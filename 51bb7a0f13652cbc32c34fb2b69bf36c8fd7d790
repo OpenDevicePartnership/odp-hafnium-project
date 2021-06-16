@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71fd29c6_7162a384",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2021-06-16T13:23:32Z",
+      "side": 1,
+      "message": "Just a thought, is this required? Omitting this might avoid forcing VMs to build with branch protection enabled (?)",
+      "range": {
+        "startLine": 111,
+        "startChar": 2,
+        "endLine": 111,
+        "endChar": 32
+      },
+      "revId": "51bb7a0f13652cbc32c34fb2b69bf36c8fd7d790",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8b81cd0_0cff5f0e",
+        "filename": "qemu_aarch64_vhe/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2021-06-16T13:23:32Z",
+      "side": 1,
+      "message": "nit: 2021",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 16
+      },
+      "revId": "51bb7a0f13652cbc32c34fb2b69bf36c8fd7d790",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61c50384_032ca5af",
+        "filename": "secure_aem_v8a_fvp_vhe/BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2021-06-16T13:23:32Z",
+      "side": 1,
+      "message": "nit: 2021",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 16
+      },
+      "revId": "51bb7a0f13652cbc32c34fb2b69bf36c8fd7d790",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
