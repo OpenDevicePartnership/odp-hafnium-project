@@ -10,10 +10,13 @@ import("//build/toolchain/host.gni")
 group("root") {
   deps = [
     "//src:hafnium(:aem_v8a_fvp_clang)",
+    "//src:hafnium(:aem_v8a_fvp_vhe_clang)",
     "//src:hafnium(:android_aarch64_clang)",
     "//src:hafnium(:qemu_aarch64_clang)",
+    "//src:hafnium(:qemu_aarch64_vhe_clang)",
     "//src:hafnium(:rpi4_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_clang)",
+    "//src:hafnium(:secure_aem_v8a_fvp_vhe_clang)",
     "//src:hafnium(:secure_tc0_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_clang)",
   ]
@@ -25,22 +28,34 @@ group("test_root") {
   deps = [
     "//src:unit_tests(:host_fake_clang)",
     "//test/arch(:aem_v8a_fvp_clang)",
+    "//test/arch(:aem_v8a_fvp_vhe_clang)",
     "//test/arch(:qemu_aarch64_clang)",
+    "//test/arch(:qemu_aarch64_vhe_clang)",
     "//test/arch(:rpi4_clang)",
     "//test/arch(:secure_aem_v8a_fvp_clang)",
+    "//test/arch(:secure_aem_v8a_fvp_vhe_clang)",
     "//test/arch(:secure_tc0_clang)",
+    "//test/linux(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/linux(:aem_v8a_fvp_vm_clang)",
+    "//test/linux(:qemu_aarch64_vhe_vm_clang)",
     "//test/linux(:qemu_aarch64_vm_clang)",
     "//test/linux(:rpi4_vm_clang)",
+    "//test/linux(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/linux(:secure_aem_v8a_fvp_vm_clang)",
     "//test/linux(:secure_tc0_vm_clang)",
+    "//test/vmapi(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
+    "//test/vmapi(:qemu_aarch64_vhe_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vm_clang)",
     "//test/vmapi(:rpi4_vm_clang)",
+    "//test/vmapi(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:secure_aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:secure_tc0_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_aem_v8a_fvp_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_tc0_vm_clang)",
   ]
@@ -81,6 +96,33 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   }
 }
 
+aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
+  cpu = "cortex-a57"
+  origin_address = "0x06000000"
+  boot_flow = "//src/boot_flow:spmc"
+  console = "//src/arch/aarch64/pl011"
+  iommu = "//src/arch/aarch64/arm_smmuv3"
+  gic_version = 3
+  gicd_base_address = "0x2f000000"
+  gicr_base_address = "0x2f100000"
+  heap_pages = 60
+  max_cpus = 8
+  max_vms = 16
+  branch_protection = "standard"
+  toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
+    plat_psci = "//src/arch/aarch64/plat/psci:spmc"
+    plat_interrupts = "//src/arch/aarch64/plat/interrupts:gicv3"
+    plat_prng = "//src/arch/aarch64/plat/prng:prng"
+    secure_world = "1"
+    pl011_base_address = "0x1c090000"
+    hftest_ctrl = "//test/hftest:ctrl_uart"
+    smmu_base_address = "0x2b400000"
+    smmu_memory_size = "0x100000"
+    enable_vhe = "1"
+  }
+}
+
 aarch64_toolchains("aem_v8a_fvp") {
   cpu = "cortex-a57"
   origin_address = "0x80000000"
@@ -101,6 +143,27 @@ aarch64_toolchains("aem_v8a_fvp") {
   }
 }
 
+aarch64_toolchains("aem_v8a_fvp_vhe") {
+  cpu = "cortex-a57"
+  origin_address = "0x80000000"
+  boot_flow = "//src/boot_flow:linux"
+  console = "//src/arch/aarch64/pl011"
+  iommu = "//src/arch/aarch64/arm_smmuv3"
+  gic_version = 3
+  gicd_base_address = "0x2f000000"
+  gicr_base_address = "0x2f100000"
+  heap_pages = 60
+  max_cpus = 8
+  max_vms = 16
+  toolchain_args = {
+    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
+    pl011_base_address = "0x1c090000"
+    smmu_base_address = "0x2b400000"
+    smmu_memory_size = "0x100000"
+    enable_vhe = "1"
+  }
+}
+
 aarch64_toolchains("qemu_aarch64") {
   cpu = "cortex-a57"
   origin_address = "0x40001000"
@@ -115,6 +178,24 @@ aarch64_toolchains("qemu_aarch64") {
   max_vms = 16
   toolchain_args = {
     pl011_base_address = "0x09000000"
+  }
+}
+
+aarch64_toolchains("qemu_aarch64_vhe") {
+  cpu = "cortex-a57"
+  origin_address = "0x40001000"
+  boot_flow = "//src/boot_flow:linux"
+  console = "//src/arch/aarch64/pl011"
+  iommu = "//src/iommu:absent"
+  gic_version = 3
+  gicd_base_address = "0x08000000"
+  gicr_base_address = "0x080A0000"
+  heap_pages = 60
+  max_cpus = 8
+  max_vms = 16
+  toolchain_args = {
+    pl011_base_address = "0x09000000"
+    enable_vhe = "1"
   }
 }
 
