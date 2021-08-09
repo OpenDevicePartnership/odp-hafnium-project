@@ -17,7 +17,7 @@ group("root") {
     "//src:hafnium(:rpi4_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_vhe_clang)",
-    "//src:hafnium(:secure_tc0_clang)",
+    "//src:hafnium(:secure_tc_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_clang)",
   ]
 }
@@ -34,7 +34,7 @@ group("test_root") {
     "//test/arch(:rpi4_clang)",
     "//test/arch(:secure_aem_v8a_fvp_clang)",
     "//test/arch(:secure_aem_v8a_fvp_vhe_clang)",
-    "//test/arch(:secure_tc0_clang)",
+    "//test/arch(:secure_tc_clang)",
     "//test/linux(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/linux(:aem_v8a_fvp_vm_clang)",
     "//test/linux(:qemu_aarch64_vhe_vm_clang)",
@@ -42,7 +42,7 @@ group("test_root") {
     "//test/linux(:rpi4_vm_clang)",
     "//test/linux(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/linux(:secure_aem_v8a_fvp_vm_clang)",
-    "//test/linux(:secure_tc0_vm_clang)",
+    "//test/linux(:secure_tc_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vhe_vm_clang)",
@@ -50,14 +50,14 @@ group("test_root") {
     "//test/vmapi(:rpi4_vm_clang)",
     "//test/vmapi(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:secure_aem_v8a_fvp_vm_clang)",
-    "//test/vmapi(:secure_tc0_vm_clang)",
+    "//test/vmapi(:secure_tc_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_aem_v8a_fvp_vm_clang)",
-    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_tc0_vm_clang)",
+    "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:secure_tc_vm_clang)",
   ]
 }
 
@@ -237,14 +237,14 @@ aarch64_toolchains("android_aarch64") {
 }
 
 # The Total Compute platform provides an envelope for all of Arm's latest IP.
-# TC0 is a reference open source software stack for the first version of the
+# TC and TC1 are reference open source software stack for the first version of the
 # Total Compute Fixed Virtual Platform (FVP). More info at:
 # https://community.arm.com/developer/tools-software/oss-platforms/w/docs/606/total-compute
 # https://gitlab.arm.com/arm-reference-solutions/arm-reference-solutions-docs/-/blob/master/docs/totalcompute/tc0/user-guide.rst
 #
-# Secure hafnium build for tc0 platform. This builds reference Secure Partition
-# Manager (SPM) for tc0 with Armv8.4-A Secure-EL2 extension.
-aarch64_toolchains("secure_tc0") {
+# Secure hafnium build for tc0 and tc1 platforms. This builds reference Secure Partition
+# Manager (SPM) for tc0 and tc1 with Armv8.4-A Secure-EL2 extension.
+aarch64_toolchains("secure_tc") {
   cpu = "cortex-a57"
   origin_address = "0xfd000000"
   boot_flow = "//src/boot_flow:spmc"

@@ -4,5 +4,5 @@
 # license that can be found in the LICENSE file or at
 # https://opensource.org/licenses/BSD-3-Clause.
 
-source_set("secure_tc0") {
+source_set("secure_tc") {
 }
