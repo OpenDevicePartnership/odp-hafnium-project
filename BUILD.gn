@@ -136,6 +136,7 @@ aarch64_toolchains("aem_v8a_fvp") {
   max_vms = 16
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
+    plat_interrupts = "//src/arch/aarch64/plat/interrupts:absent"
     pl011_base_address = "0x1c090000"
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
@@ -156,6 +157,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   max_vms = 16
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
+    plat_interrupts = "//src/arch/aarch64/plat/interrupts:absent"
     pl011_base_address = "0x1c090000"
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
@@ -177,6 +179,7 @@ aarch64_toolchains("qemu_aarch64") {
   max_vms = 16
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
+    plat_interrupts = "//src/arch/aarch64/plat/interrupts:absent"
     pl011_base_address = "0x09000000"
   }
 }
@@ -195,6 +198,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
   max_vms = 16
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
+    plat_interrupts = "//src/arch/aarch64/plat/interrupts:absent"
     pl011_base_address = "0x09000000"
     enable_vhe = "1"
   }
@@ -212,6 +216,7 @@ aarch64_toolchains("rpi4") {
   max_vms = 16
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
+    plat_interrupts = "//src/arch/aarch64/plat/interrupts:absent"
     gpio_base_address = "0xfe200000"
     aux_base_address = "0xfe215000"
     core_freq_mhz = 500
