@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b6a454d_ff4bf155",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2021-10-28T09:46:45Z",
+      "side": 1,
+      "message": "I am a bit unsure about this... The absent configuration doesn\u0027t seem to be linking, some config is probably missing somewhere.\n\nFunction \u0027plat_ffa_sri_state_set\u0027 is failing to link with this change.\n\nLocally:\ngrep -rn \"void plat_ffa_sri_state_set(enum plat_ffa_sri_state state)\" --include\u003d*.{c,h}\n\nsrc/arch/aarch64/plat/ffa/spmc.c:1106:void plat_ffa_sri_state_set(enum plat_ffa_sri_state state)\nsrc/arch/aarch64/plat/ffa/hypervisor.c:519:void plat_ffa_sri_state_set(enum plat_ffa_sri_state state)\nsrc/arch/fake/hypervisor/ffa.c:260:void plat_ffa_sri_state_set(enum plat_ffa_sri_state state)\ninc/hf/arch/plat/ffa.h:170:void plat_ffa_sri_state_set(enum plat_ffa_sri_state state);\n\n\nAm I missing something?",
+      "range": {
+        "startLine": 236,
+        "startChar": 44,
+        "endLine": 236,
+        "endChar": 54
+      },
+      "revId": "25dc72a357f077e1f532e7bc8a45d6749f8367e9",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
