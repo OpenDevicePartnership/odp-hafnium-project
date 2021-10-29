@@ -250,7 +250,7 @@ aarch64_toolchains("secure_tc") {
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
-  gic_version = 3
+  gic_version = 4
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x30080000"
   heap_pages = 60
