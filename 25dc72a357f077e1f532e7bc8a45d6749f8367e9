@@ -22,6 +22,30 @@
       },
       "revId": "25dc72a357f077e1f532e7bc8a45d6749f8367e9",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41a8ac29_477eac1a",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2021-11-05T15:42:01Z",
+      "side": 1,
+      "message": "Merging this change as the top level change has already been merged https://review.trustedfirmware.org/c/hafnium/hafnium/+/11887\n\nLooking at this comment left open and amend on top if necessary.",
+      "parentUuid": "2b6a454d_ff4bf155",
+      "range": {
+        "startLine": 236,
+        "startChar": 44,
+        "endLine": 236,
+        "endChar": 54
+      },
+      "revId": "25dc72a357f077e1f532e7bc8a45d6749f8367e9",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
