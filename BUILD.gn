@@ -93,6 +93,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
     hftest_ctrl = "//test/hftest:ctrl_uart"
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
+    enable_mte = "1"
   }
 }
 
