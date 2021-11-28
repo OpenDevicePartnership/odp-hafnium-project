@@ -108,6 +108,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   heap_pages = 60
   max_cpus = 8
   max_vms = 16
+  branch_protection = "standard"
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
@@ -154,6 +155,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   heap_pages = 60
   max_cpus = 8
   max_vms = 16
+  branch_protection = "standard"
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x1c090000"
@@ -193,6 +195,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
   heap_pages = 60
   max_cpus = 8
   max_vms = 16
+  branch_protection = "standard"
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x09000000"
