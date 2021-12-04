@@ -19,6 +19,7 @@ group("root") {
     "//src:hafnium(:secure_aem_v8a_fvp_vhe_clang)",
     "//src:hafnium(:secure_tc_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_clang)",
+    "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_vhe_clang)",
   ]
 }
 
