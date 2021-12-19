@@ -114,7 +114,6 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
     plat_prng = "//src/arch/aarch64/plat/prng:prng"
     secure_world = "1"
     pl011_base_address = "0x1c090000"
-    hftest_ctrl = "//test/hftest:ctrl_uart"
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
     enable_vhe = "1"
