@@ -52,6 +52,24 @@
       "parentUuid": "0aea9e51_685c8753",
       "revId": "d0cbc616600c16a27e828a469d8f1546a092aa3c",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67edc852_ed029a71",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-01-03T17:53:47Z",
+      "side": 1,
+      "message": "Joao is right, we cannot merge a submodule change without a corresponding top level change pointing to this new submodule hash.\nYou can either create an hafnium top level change containing only the submodule hash change, or rebase the submodule change onto another existing project/reference change which already has a matching top level change.",
+      "parentUuid": "c7889744_54fffd05",
+      "revId": "d0cbc616600c16a27e828a469d8f1546a092aa3c",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
