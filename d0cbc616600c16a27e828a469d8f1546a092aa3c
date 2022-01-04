@@ -70,6 +70,24 @@
       "parentUuid": "c7889744_54fffd05",
       "revId": "d0cbc616600c16a27e828a469d8f1546a092aa3c",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a497c94_26b2d156",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-01-04T08:21:40Z",
+      "side": 1,
+      "message": "e.g. you can rebase https://review.trustedfirmware.org/c/hafnium/project/reference/+/12828 on top of current change, and use a single submodule hash update in https://review.trustedfirmware.org/c/hafnium/hafnium/+/12459",
+      "parentUuid": "67edc852_ed029a71",
+      "revId": "d0cbc616600c16a27e828a469d8f1546a092aa3c",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
