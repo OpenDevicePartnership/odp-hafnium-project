@@ -46,6 +46,30 @@
       },
       "revId": "b7ee543059135b2da76d0afb0b795fa78c3319ca",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "733d41dd_104fbac6",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2022-02-18T02:52:38Z",
+      "side": 1,
+      "message": "how can gicr frames be more than MAX CPUs? there is a 1:1 relationship between physical cores and redistributors.. The only case where frames can be more than physical cpus is when you fuse out/floor sweep cores in which case you have redistributors but no corresponding core. It would be weird if you built hafnium where the number of GICrs are more than MAXCPUS. you would want to build hafnium for the largest possible system, and then reduce the number of physical cores based on if cores are fused out...",
+      "parentUuid": "adced676_8a56bd50",
+      "range": {
+        "startLine": 83,
+        "startChar": 2,
+        "endLine": 83,
+        "endChar": 13
+      },
+      "revId": "b7ee543059135b2da76d0afb0b795fa78c3319ca",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
