@@ -70,6 +70,30 @@
       },
       "revId": "b7ee543059135b2da76d0afb0b795fa78c3319ca",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b1f8ef9_22976472",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000162
+      },
+      "writtenOn": "2022-02-21T21:33:04Z",
+      "side": 1,
+      "message": "\u003e how can gicr frames be more than MAX CPUs? there is a 1:1 relationship between physical cores and redistributors.\n\nNo its not a 1:1 relation. There can be more GICR frames than CPUs. We have Tegra platforms with this configuration and it is perfectly legal. Using MAX_CPUS breaks that configuration and does not work on Tegra. Hence the change.",
+      "parentUuid": "733d41dd_104fbac6",
+      "range": {
+        "startLine": 83,
+        "startChar": 2,
+        "endLine": 83,
+        "endChar": 13
+      },
+      "revId": "b7ee543059135b2da76d0afb0b795fa78c3319ca",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
