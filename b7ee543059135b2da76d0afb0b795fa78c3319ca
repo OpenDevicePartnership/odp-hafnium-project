@@ -94,6 +94,30 @@
       },
       "revId": "b7ee543059135b2da76d0afb0b795fa78c3319ca",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e61da0ee_b08a92c1",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2022-02-22T03:08:55Z",
+      "side": 1,
+      "message": "On a given SOC, you cannot have more redistributors than the number of CPUs, when ALL CPUS are functional. The fact that some cores are fused out but the redistributors are accessible means that your platform port isnt setting MAX_CPUS to the maximum number of CPUs designed for the SoC. Effectively, what you are doing here means that you are creating one build of hafnium per SKU of the same SoC, SKU being different number of cores being fused out. The GICV3V4 overview says that there is one redistributor per PE and so does the GICv4 Arch spec (IHI0069G, Figure 3-1 and a few other places), so there is a 1:1 correspondence.",
+      "parentUuid": "4b1f8ef9_22976472",
+      "range": {
+        "startLine": 83,
+        "startChar": 2,
+        "endLine": 83,
+        "endChar": 13
+      },
+      "revId": "b7ee543059135b2da76d0afb0b795fa78c3319ca",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
