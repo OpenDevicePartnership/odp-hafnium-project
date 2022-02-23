@@ -13,7 +13,6 @@ group("root") {
     "//src:hafnium(:aem_v8a_fvp_vhe_clang)",
     "//src:hafnium(:qemu_aarch64_clang)",
     "//src:hafnium(:qemu_aarch64_vhe_clang)",
-    "//src:hafnium(:rpi4_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_vhe_clang)",
     "//src:hafnium(:secure_tc_clang)",
@@ -31,17 +30,14 @@ group("test_root") {
     "//test/arch(:aem_v8a_fvp_vhe_clang)",
     "//test/arch(:qemu_aarch64_clang)",
     "//test/arch(:qemu_aarch64_vhe_clang)",
-    "//test/arch(:rpi4_clang)",
     "//test/linux(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/linux(:aem_v8a_fvp_vm_clang)",
     "//test/linux(:qemu_aarch64_vhe_vm_clang)",
     "//test/linux(:qemu_aarch64_vm_clang)",
-    "//test/linux(:rpi4_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vhe_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vm_clang)",
-    "//test/vmapi(:rpi4_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi/arch/aarch64/gicv3:gicv3_test(:qemu_aarch64_vhe_vm_clang)",
@@ -187,25 +183,6 @@ aarch64_toolchains("qemu_aarch64_vhe") {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x09000000"
     enable_vhe = "1"
-  }
-}
-
-aarch64_toolchains("rpi4") {
-  cpu = "cortex-a72"
-  origin_address = "0x80000"
-  boot_flow = "//src/boot_flow:linux"
-  console = "//project/reference/rpi:mini_uart"
-  iommu = "//src/iommu:absent"
-  gic_version = 2
-  heap_pages = 60
-  max_cpus = 4
-  max_vms = 16
-  toolchain_args = {
-    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
-    gpio_base_address = "0xfe200000"
-    aux_base_address = "0xfe215000"
-    core_freq_mhz = 500
-    hftest_ctrl = "//test/hftest:ctrl_uart"
   }
 }
 
