@@ -11,7 +11,6 @@ group("root") {
   deps = [
     "//src:hafnium(:aem_v8a_fvp_clang)",
     "//src:hafnium(:aem_v8a_fvp_vhe_clang)",
-    "//src:hafnium(:android_aarch64_clang)",
     "//src:hafnium(:qemu_aarch64_clang)",
     "//src:hafnium(:qemu_aarch64_vhe_clang)",
     "//src:hafnium(:rpi4_clang)",
@@ -207,24 +206,6 @@ aarch64_toolchains("rpi4") {
     aux_base_address = "0xfe215000"
     core_freq_mhz = 500
     hftest_ctrl = "//test/hftest:ctrl_uart"
-  }
-}
-
-# Generic target which uses the Android boot flow. It is not intended to run on
-# any Android platform. It exists only to test building Android-specific code.
-aarch64_toolchains("android_aarch64") {
-  cpu = "cortex-a57"
-  origin_address = "0x0"
-  boot_flow = "//src/boot_flow:android"
-  console = "//src/arch/aarch64/pl011"
-  iommu = "//src/iommu:absent"
-  gic_version = 2
-  heap_pages = 60
-  max_cpus = 8
-  max_vms = 16
-  toolchain_args = {
-    pl011_base_address = "0x09000000"
-    plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
   }
 }
 
