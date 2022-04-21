@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9a3a4ac_24d515d2",
+        "filename": "BUILD.gn",
+        "patchSetId": 6
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1000162
+      },
+      "writtenOn": "2022-04-21T13:04:55Z",
+      "side": 1,
+      "message": "Why not enable the flag for this platform too?",
+      "revId": "ade1d9794a56b81e0fea369581f61dbccb3fea0f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
