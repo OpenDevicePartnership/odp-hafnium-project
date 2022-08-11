@@ -67,6 +67,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
+  gic_enable_espi = 1
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
