@@ -16,9 +16,11 @@ group("root") {
     "//src:hafnium(:rpi4_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_clang)",
     "//src:hafnium(:secure_aem_v8a_fvp_vhe_clang)",
+    "//src:hafnium(:secure_qemu_aarch64_clang)",
     "//src:hafnium(:secure_tc_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_vhe_clang)",
+    "//src/arch/aarch64/qemuloader:bl_secure(:secure_qemu_aarch64_clang)",
   ]
 }
 
@@ -39,6 +41,7 @@ group("test_root") {
     "//test/linux(:rpi4_vm_clang)",
     "//test/vmapi:partitions(:secure_aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi:partitions(:secure_aem_v8a_fvp_vm_clang)",
+    "//test/vmapi:partitions_qemu(:secure_qemu_aarch64_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vhe_vm_clang)",
