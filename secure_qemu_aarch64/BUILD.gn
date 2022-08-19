@@ -6,3 +6,17 @@
 
 source_set("secure_qemu_aarch64") {
 }
+
+source_set("device_psci") {
+  testonly = true
+
+  public_configs = [ "//test/hftest:hftest_config" ]
+
+  sources = [
+    "device_psci.c",
+  ]
+
+  deps = [
+    "//src/arch/aarch64/hftest:power_mgmt",
+  ]
+}
