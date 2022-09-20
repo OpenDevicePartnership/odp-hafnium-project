@@ -70,7 +70,7 @@ aarch64_toolchains("secure_aem_v8a_fvp") {
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   branch_protection = "standard"
@@ -97,7 +97,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   branch_protection = "standard"
@@ -125,7 +125,7 @@ aarch64_toolchains("aem_v8a_fvp") {
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
@@ -146,7 +146,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   branch_protection = "standard"
@@ -169,7 +169,7 @@ aarch64_toolchains("qemu_aarch64") {
   gicd_base_address = "0x08000000"
   gicr_base_address = "0x080A0000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
@@ -188,7 +188,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
   gicd_base_address = "0x08000000"
   gicr_base_address = "0x080A0000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   toolchain_args = {
@@ -205,7 +205,7 @@ aarch64_toolchains("rpi4") {
   console = "//project/reference/rpi:mini_uart"
   iommu = "//src/iommu:absent"
   gic_version = 2
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 4
   max_vms = 16
   toolchain_args = {
@@ -235,7 +235,7 @@ aarch64_toolchains("secure_tc") {
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x30080000"
   gicr_frames = 8
-  heap_pages = 60
+  heap_pages = 180
   max_cpus = 8
   max_vms = 16
   branch_protection = "standard"
