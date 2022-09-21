@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "caab0020_588e7ae0",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2022-09-21T19:38:15Z",
+      "side": 1,
+      "message": "I am curious if any sort of memory profiling was done to anticipate the demand for additional heap pages.",
+      "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
