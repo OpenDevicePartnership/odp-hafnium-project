@@ -16,6 +16,24 @@
       "message": "I am curious if any sort of memory profiling was done to anticipate the demand for additional heap pages.",
       "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8d779a4_1ca575aa",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000114
+      },
+      "writtenOn": "2022-09-21T20:07:38Z",
+      "side": 1,
+      "message": "no memory profiling, other than some tests failed due to being out of memory. We can experiment to minimize the footprint but with memory sharing APIs, we can always run into out of memory issues since in theory we can map a lot of memory via share/lend/donate apis and hafnium page table mapper can just run out of pages.",
+      "parentUuid": "caab0020_588e7ae0",
+      "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
