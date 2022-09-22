@@ -122,6 +122,24 @@
       "parentUuid": "b8d779a4_1ca575aa",
       "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3af97ddd_f14c602e",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-09-22T14:49:46Z",
+      "side": 1,
+      "message": "@Raghu apologies this is pre-empting current change a bit but we need to get TF-A CI fixed asap.\nIf I go with https://review.trustedfirmware.org/c/hafnium/project/reference/+/16821, I expect current change will no longer be necessary.",
+      "parentUuid": "6e9e1226_8d8d433a",
+      "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
