@@ -34,6 +34,24 @@
       "parentUuid": "caab0020_588e7ae0",
       "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e9e1226_8d8d433a",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-09-22T13:02:08Z",
+      "side": 1,
+      "message": "+1 Madhu\nWe already have such heap size increase as part of TC SW stack when running Trusty with Hafnium:\nhttps://gitlab.arm.com/arm-reference-solutions/build-scripts/-/blob/TC2-2022.08.12/files/hafnium/tc2/project/reference/0001-feat-tc-increase-secure_tc-heap-page-size.patch\n\nMerging [1] will increase even more the required number of heap pages in the Trusty scenario.\nWithout concrete profiling I\u0027d say we should increase up to 180 pages to combine requirements of current change and Trusty.\n\nMeanwhile I may have to submit a fix independently to make sure TF-A CI gets unblocked. So I may submit a change with this amount above.\n\n@Rupinderjit what is your opinion? Any chance you can test Android boot by cherry-picking 16778 and check how much of heap is necessary? Thanks.\n\n[1] https://review.trustedfirmware.org/c/hafnium/hafnium/+/16778",
+      "parentUuid": "b8d779a4_1ca575aa",
+      "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
