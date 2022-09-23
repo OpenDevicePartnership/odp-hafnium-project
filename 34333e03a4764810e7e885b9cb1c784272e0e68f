@@ -71,6 +71,24 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "92866487_40944bb6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-09-23T07:10:21Z",
+      "side": 1,
+      "message": "merged https://review.trustedfirmware.org/c/hafnium/project/reference/+/16821",
+      "parentUuid": "47b7d21e_a7b72dbd",
+      "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "caab0020_588e7ae0",
@@ -174,6 +192,24 @@
       "side": 1,
       "message": "Thanks Olivier! Will abandon this change.",
       "parentUuid": "e5ebff96_85ca484b",
+      "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03094fbc_e7c0021f",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-09-23T07:10:21Z",
+      "side": 1,
+      "message": "merged https://review.trustedfirmware.org/c/hafnium/project/reference/+/16821",
+      "parentUuid": "abc937f2_29c5aa15",
       "revId": "34333e03a4764810e7e885b9cb1c784272e0e68f",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
