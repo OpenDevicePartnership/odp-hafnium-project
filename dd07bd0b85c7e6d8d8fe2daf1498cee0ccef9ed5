@@ -16,6 +16,24 @@
       "message": "Hi Shiju,\n\nThanks for your contribution.\nNote we won\u0027t merge a change in this submodule tree without a corresponding change in the main tree (https://git.trustedfirmware.org/hafnium/hafnium.git/)\n\nNote also we have similar enabler changes for SEL2 on qemu:\nhttps://review.trustedfirmware.org/q/topic:%22od%252Fqemu-sel2%22+(status:open%20OR%20status:merged)\n\nIn particular:\nhttps://review.trustedfirmware.org/c/hafnium/project/reference/+/16322\n\nLet us know if this may suit your needs.\n",
       "revId": "dd07bd0b85c7e6d8d8fe2daf1498cee0ccef9ed5",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "833b0c74_fd5a1a67",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000827
+      },
+      "writtenOn": "2022-10-24T10:35:59Z",
+      "side": 1,
+      "message": "Hi Olivier,\n\nThanks for looking into this patch. I will check the differences and try to test your hafnium changes in my test setup for the qemu-sel2.\n\nAlso please see TF-A work for the qemu-sel2 posted for the review, in case if it is useful to your work.\n\nhttps://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/17388\nhttps://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/17389\n\nThanks,\nShiju",
+      "parentUuid": "0f7fd20e_64424c5c",
+      "revId": "dd07bd0b85c7e6d8d8fe2daf1498cee0ccef9ed5",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
