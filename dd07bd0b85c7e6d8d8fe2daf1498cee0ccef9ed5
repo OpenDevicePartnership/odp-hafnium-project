@@ -68,6 +68,24 @@
       "message": "Hi Olivier,\n\nCan you share the instructions to build and run following your TF-A + hafnium S-EL2 code in the QEMU?\n\nhttps://review.trustedfirmware.org/q/topic:%22od%252Fqemu-sel2%22+(status:open%20OR%20status:merged)\n\nThanks. \n",
       "revId": "dd07bd0b85c7e6d8d8fe2daf1498cee0ccef9ed5",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e9288d1_ba9cad60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-10-25T19:15:36Z",
+      "side": 1,
+      "message": "Hi,\n\nRoughly I believe you can do this:\n\n # Check out the hafnium change:\n git fetch https://review.trustedfirmware.org/hafnium/hafnium refs/changes/23/16323/7 \u0026\u0026 git checkout FETCH_HEAD\n\n # Update submodules\n git submodule update\n\n # Clean and build\n make clobber\n make PROJECT\u003dreference\n\n # Run the SPMC test suite using qemu:\n kokoro/test_spmc.sh --qemu\n\nLet me know how it goes.",
+      "parentUuid": "104b86d8_2c03bb1c",
+      "revId": "dd07bd0b85c7e6d8d8fe2daf1498cee0ccef9ed5",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
