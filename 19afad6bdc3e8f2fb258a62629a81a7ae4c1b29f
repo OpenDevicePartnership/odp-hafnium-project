@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f80839ae_f4e1b72b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000827
+      },
+      "writtenOn": "2022-10-26T10:30:45Z",
+      "side": 1,
+      "message": "Hi Olivier,\n\nI built hafnium with your hafnium changes and booted good in my test setup for the QEMU S-EL2 booting \nto the normal world and able to ran few op-tee tests (xtest) successfully from the normal world. However please note the following which is unrelated to this change,\n1. I tested with your change applied on top of hafnium change \"feat(interrupts): ns interrupt action in manifest\".\n   because with the change \"feat(interrupts): preferred managed exit signal\" cause following error\n   in the non-secure terminal while booting linux in the normal world.\n   Error Log:\n   NOTICE: Trapped access to system register write: op0\u003d1, op1\u003d0, crn\u003d7, crm\u003d14, op2\u003d2, rt\u003d11.\n   NOTICE: Injecting Unknown Reason exception into VM 0x8001.\nAbove system register found as DC CISW.\nThanks.",
+      "revId": "19afad6bdc3e8f2fb258a62629a81a7ae4c1b29f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
