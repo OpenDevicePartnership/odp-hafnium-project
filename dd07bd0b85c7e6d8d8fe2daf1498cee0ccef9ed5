@@ -86,6 +86,23 @@
       "parentUuid": "104b86d8_2c03bb1c",
       "revId": "dd07bd0b85c7e6d8d8fe2daf1498cee0ccef9ed5",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9be61866_464e3a22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000827
+      },
+      "writtenOn": "2022-10-26T10:09:40Z",
+      "side": 1,
+      "message": "Thanks Olivier. I will reply the test result in the corresponding hafnium change.\nSorry.The question was about the command to build TF-A for your TF-A changes for the SPMC at S-EL2 \nand an example command for the qemu to boot with hafnium and SP if it is already tested.  ",
+      "revId": "dd07bd0b85c7e6d8d8fe2daf1498cee0ccef9ed5",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
