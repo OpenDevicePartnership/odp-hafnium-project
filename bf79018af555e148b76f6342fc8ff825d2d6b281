@@ -70,6 +70,24 @@
       "parentUuid": "0473588d_09a24f4a",
       "revId": "bf79018af555e148b76f6342fc8ff825d2d6b281",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f30ebd12_2e0a97a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000457
+      },
+      "writtenOn": "2022-12-14T13:34:08Z",
+      "side": 1,
+      "message": "but that will disable for all s-el0 partitions.  Though trusted services are the only s-el0 partitions currently, but in theory end users can have their own s-el0 SPs that can support BTI and they might wish to enable branch protection. Better to make that either a build time option or run time configuration based on the SPs that is executing.  \n\nso, shall I wait for a proper implementation in hafnium or shall we go ahead with this patch ?",
+      "parentUuid": "cfa030bf_affcc309",
+      "revId": "bf79018af555e148b76f6342fc8ff825d2d6b281",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
