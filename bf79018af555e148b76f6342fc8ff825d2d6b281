@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ddd25da_599db9c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2022-12-14T11:00:30Z",
+      "side": 1,
+      "message": "Hi Davidson,\nDisabling branch protection is a bit unfair because it will prevent enabling PAC/BTI for OP-TEE usage.\nDid we evaluate the cost of enabling PAC/BTI for trusted services?\nIt\u0027s a matter of adding one build option to build TS, and should be transparent if PAC/BTI isn\u0027t implemented on a given platform (the generated instructions are no-ops if PAC/BTI is not enabled).",
+      "revId": "bf79018af555e148b76f6342fc8ff825d2d6b281",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
