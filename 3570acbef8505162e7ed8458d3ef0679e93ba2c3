@@ -164,6 +164,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f4b4deff_36880906",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2023-01-18T19:03:02Z",
+      "side": 1,
+      "message": "Thanks Olivier!",
+      "parentUuid": "c3929993_b1b96448",
+      "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e3e1b3b1_24495ee3",
         "filename": "BUILD.gn",
         "patchSetId": 1
