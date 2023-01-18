@@ -70,6 +70,24 @@
       "parentUuid": "5fb1d767_bea3fad0",
       "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ccf4aef_a0430eca",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2023-01-18T14:35:18Z",
+      "side": 1,
+      "message": "That sounds good.\nTake this as the first iteration.\nIt already shows the benefit in build times, though still needs further polishing/clean-up.\nCan take care of that, if that is the direct we going forward with.",
+      "parentUuid": "c39451cc_87695826",
+      "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
