@@ -16,6 +16,24 @@
       "message": "Could we at least have one non-vhe build config enabled? There are many code paths for non-vhe config. We could at least have some sanity checks in the form of build checks. No need to have runtime tests.",
       "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b9ba565_e287082c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2023-01-18T14:10:18Z",
+      "side": 1,
+      "message": "Which one would you favour?",
+      "parentUuid": "3860c9fd_8dc74a6a",
+      "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
