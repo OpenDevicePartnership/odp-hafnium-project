@@ -24,6 +24,30 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e0e8f81_75c53679",
+        "filename": "BUILD.gn",
+        "patchSetId": 7
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-01-30T19:19:28Z",
+      "side": 1,
+      "message": "keeping this uart instance for now as it is required by further ci enablement",
+      "parentUuid": "57f8a41a_052ce51b",
+      "range": {
+        "startLine": 228,
+        "startChar": 26,
+        "endLine": 228,
+        "endChar": 36
+      },
+      "revId": "aeeb35da5ad7ad6e21a419b79264cf605d61267f",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1fe4ed14_c8cec3c7",
