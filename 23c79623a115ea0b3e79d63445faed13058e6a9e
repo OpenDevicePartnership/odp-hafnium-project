@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e867aac1_143a0018",
+        "filename": "secure_qemu_aarch64/device_psci.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2023-01-31T12:16:06Z",
+      "side": 1,
+      "message": "Nothing much to say about this file...\nBut why this location?",
+      "revId": "23c79623a115ea0b3e79d63445faed13058e6a9e",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
