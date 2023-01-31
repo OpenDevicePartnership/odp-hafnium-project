@@ -138,6 +138,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "efa8a3db_fffccd88",
+        "filename": "BUILD.gn",
+        "patchSetId": 10
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-01-31T13:17:15Z",
+      "side": 1,
+      "message": "This option controls the llvm/clang code generation, not the emulation, so whether or not secure virtualization is supported isn\u0027t really a problem here.\nThis isn\u0027t a qemu specific problem. However, agree this doesn\u0027t sound consistent, and deserve fixing all secure_xxx targets (incl. FVP\u0027s) with a more appropriate/refreshed cpu name that clang supports.",
+      "parentUuid": "005227a9_d3e41e11",
+      "range": {
+        "startLine": 209,
+        "startChar": 0,
+        "endLine": 209,
+        "endChar": 20
+      },
+      "revId": "f17c61e3e17fe7eb48f359fa7558758242e6ba06",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7946fb56_941bc317",
         "filename": "BUILD.gn",
         "patchSetId": 10
@@ -161,6 +185,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "12d52559_418630d9",
+        "filename": "BUILD.gn",
+        "patchSetId": 10
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-01-31T13:17:15Z",
+      "side": 1,
+      "message": "Are you referring to PL011 or PL061?\nCan you provide the link?",
+      "parentUuid": "7946fb56_941bc317",
+      "range": {
+        "startLine": 227,
+        "startChar": 0,
+        "endLine": 227,
+        "endChar": 37
+      },
+      "revId": "f17c61e3e17fe7eb48f359fa7558758242e6ba06",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cd0a0acd_99ba53aa",
         "filename": "BUILD.gn",
         "patchSetId": 10
@@ -172,6 +220,30 @@
       "writtenOn": "2023-01-31T12:12:51Z",
       "side": 1,
       "message": "Probably worth mentioning...\nNWd setup uses the fdt for controlling test execution.",
+      "range": {
+        "startLine": 228,
+        "startChar": 0,
+        "endLine": 228,
+        "endChar": 43
+      },
+      "revId": "f17c61e3e17fe7eb48f359fa7558758242e6ba06",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18db8eb5_5a37974e",
+        "filename": "BUILD.gn",
+        "patchSetId": 10
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-01-31T13:17:15Z",
+      "side": 1,
+      "message": "Current change is only required for building the spmc (no tests) so I believe this statement is really useful only starting from next change.\n\nThat\u0027s for the spmc only configuration (no normal world), mimicking what was done for FVP.\nI agree we might investigate using fdts rather than uart similary to nwd qemu configuration if that\u0027s what you referring to, in which case this statement will be removed in subsequent test related changes.",
+      "parentUuid": "cd0a0acd_99ba53aa",
       "range": {
         "startLine": 228,
         "startChar": 0,
