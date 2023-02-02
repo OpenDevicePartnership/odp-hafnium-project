@@ -7,9 +7,7 @@
 import("args.gni")
 
 source_set("mini_uart") {
-  sources = [
-    "mini_uart.c",
-  ]
+  sources = [ "mini_uart.c" ]
 
   assert(gpio_base_address != 0,
          "\"gpio_base_address\" must be defined for ${target_name}.")
