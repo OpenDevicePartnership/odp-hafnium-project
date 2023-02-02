@@ -72,6 +72,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
     smmu_memory_size = "0x100000"
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
+    plat_num_virtual_interrupts_ids = 1024
   }
 }
 
@@ -141,6 +142,7 @@ aarch64_toolchains("secure_qemu_aarch64") {
     hftest_ctrl = "//test/hftest:ctrl_uart"
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
+    plat_num_virtual_interrupts_ids = 1024
   }
 }
 
@@ -193,5 +195,6 @@ aarch64_toolchains("secure_tc") {
     pl011_base_address = "0x7ff80000"
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
+    plat_num_virtual_interrupts_ids = 1024
   }
 }
