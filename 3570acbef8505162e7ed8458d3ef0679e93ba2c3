@@ -213,6 +213,24 @@
       "message": "I wonder if we should add enable_vhe\u003d1 here. Looks tricky as I don\u0027t believe anyone has tested rpi4 since long time.",
       "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f451e624_8e91758b",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2023-02-09T12:06:48Z",
+      "side": 1,
+      "message": "The changes are making it such VHE is used, if supported by the platform.\nElse, VHE not used at all.\nDo you see a problem with this approach, for the case of the rpi?",
+      "parentUuid": "e3e1b3b1_24495ee3",
+      "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
