@@ -231,6 +231,24 @@
       "parentUuid": "e3e1b3b1_24495ee3",
       "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "877b33db_1a3c1ba7",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-14T14:11:44Z",
+      "side": 1,
+      "message": "VHE can be enabled for the normal world Hypervisor here.\nAs said in the other thread, I\u0027m fine to leave as is anyways as atm this platform is not tested.",
+      "parentUuid": "f451e624_8e91758b",
+      "revId": "3570acbef8505162e7ed8458d3ef0679e93ba2c3",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
