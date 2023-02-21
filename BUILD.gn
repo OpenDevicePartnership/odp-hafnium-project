@@ -288,7 +288,7 @@ aarch64_toolchains("secure_tc") {
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
     plat_interrupts = "//src/arch/aarch64/plat/interrupts:gicv3"
     secure_world = "1"
-    pl011_base_address = "0x7ff80000"
+    pl011_base_address = "0x2A410000"
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
     plat_num_virtual_interrupts_ids = 1024
