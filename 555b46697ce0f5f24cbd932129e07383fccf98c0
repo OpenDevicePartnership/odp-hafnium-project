@@ -16,6 +16,24 @@
       "message": "Can you please add one line of rationale for the change?",
       "revId": "555b46697ce0f5f24cbd932129e07383fccf98c0",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "210469f9_c075b410",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2023-02-24T17:40:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e26f3f84_04e6e9df",
+      "revId": "555b46697ce0f5f24cbd932129e07383fccf98c0",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
