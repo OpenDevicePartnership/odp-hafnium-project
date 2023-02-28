@@ -22,6 +22,30 @@
       },
       "revId": "1343591f704503ee064005c271cb28938a4d3425",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0593b169_88d9c180",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2023-02-28T17:23:09Z",
+      "side": 1,
+      "message": "I believe it is needed as per the assignment [1]. \n\n[1] https://review.trustedfirmware.org/c/hafnium/hafnium/+/19232/4/build/toolchain/embedded.gni#205\n\nWithout it, we get the following build fail:\n\nninja: Entering directory `out/reference\u0027\n[0/1] Regenerating ninja files\nERROR at //build/toolchain/embedded.gni:205:47: No value named \"num_virtual_interrupts_ids\" in scope \"invoker\"\n   plat_num_virtual_interrupts_ids \u003d invoker.num_virtual_interrupts_ids\n                                             ^-------------------------\nSee //build/toolchain/embedded.gni:250:3: whence it was called.\n  embedded_platform_toolchain(target_name) {\n  ^-----------------------------------------\nSee //build/toolchain/embedded.gni:310:3: whence it was called.\n  aarch64_common_toolchain(\"${target_name}\") {\n  ^-------------------------------------------\nSee //build/toolchain/embedded.gni:320:3: whence it was called.\n  aarch64_toolchain(\"${target_name}\") {\n  ^------------------------------------\nSee //project/reference/BUILD.gn:79:1: whence it was called.\naarch64_toolchains(\"aem_v8a_fvp_vhe\") {\n^--------------------------------------\nSee //BUILD.gn:12:12: which caused the file to be included.\n deps \u003d [ \"//project/${project}:root\" ]\n\n           ^--------------------------\nFAILED: build.ninja \n../../prebuilts/linux-x64/gn/gn --root\u003d../.. -q --export-compile-commands --regeneration gen .\nninja: error: rebuilding \u0027build.ninja\u0027: subcommand failed\nmake: *** [Makefile:70: all] Error 1",
+      "parentUuid": "260d119a_7e871133",
+      "range": {
+        "startLine": 93,
+        "startChar": 1,
+        "endLine": 93,
+        "endChar": 33
+      },
+      "revId": "1343591f704503ee064005c271cb28938a4d3425",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
