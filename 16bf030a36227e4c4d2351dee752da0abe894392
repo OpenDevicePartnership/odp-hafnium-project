@@ -3,6 +3,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0611d492_ce8e49f5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-28T14:11:17Z",
+      "side": 1,
+      "message": "Suggest to apply this rule to all SPMC variants.",
+      "range": {
+        "startLine": 9,
+        "startChar": 59,
+        "endLine": 9,
+        "endChar": 64
+      },
+      "revId": "16bf030a36227e4c4d2351dee752da0abe894392",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04b9b9e2_15f4ed7f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-28T14:11:17Z",
+      "side": 1,
+      "message": "Hafnium hypervisor",
+      "range": {
+        "startLine": 10,
+        "startChar": 33,
+        "endLine": 10,
+        "endChar": 46
+      },
+      "revId": "16bf030a36227e4c4d2351dee752da0abe894392",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ce1713cc_0b37781d",
         "filename": "BUILD.gn",
         "patchSetId": 2
