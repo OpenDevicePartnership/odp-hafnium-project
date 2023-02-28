@@ -72,6 +72,30 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ec407db_bb05f606",
+        "filename": "BUILD.gn",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-28T11:36:25Z",
+      "side": 1,
+      "message": "prefer keeping short names without vhe if possible.",
+      "parentUuid": "55c9bdf2_019a3e44",
+      "range": {
+        "startLine": 124,
+        "startChar": 20,
+        "endLine": 124,
+        "endChar": 39
+      },
+      "revId": "86882cdf8d757c62d32b76f49ff1597b6c2f21ee",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b47515d8_4868fb14",
@@ -133,6 +157,30 @@
       "side": 1,
       "message": "Eventually we could even drop the vhe from the names?\nThis could be done as a separate patch, with synchronised merge to avoid issues?",
       "parentUuid": "7b33408f_59f42087",
+      "range": {
+        "startLine": 179,
+        "startChar": 20,
+        "endLine": 179,
+        "endChar": 29
+      },
+      "revId": "86882cdf8d757c62d32b76f49ff1597b6c2f21ee",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e25a49a6_d5c89425",
+        "filename": "BUILD.gn",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-28T11:36:25Z",
+      "side": 1,
+      "message": "That\u0027s what I had in mind, but let\u0027s do on later changes.",
+      "parentUuid": "17a6d46d_7582bfed",
       "range": {
         "startLine": 179,
         "startChar": 20,
