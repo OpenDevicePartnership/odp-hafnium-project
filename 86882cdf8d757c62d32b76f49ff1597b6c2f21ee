@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "865395c6_1b1f6cdb",
+        "filename": "BUILD.gn",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-28T08:45:43Z",
+      "side": 1,
+      "message": "please keep as is, as this change would break the downstream qemu config:\nhttps://github.com/jenswi-linaro/build/blob/qemu_sel2/qemu_v8.mk#L88",
+      "parentUuid": "abd88c77_7a419d0c",
+      "range": {
+        "startLine": 124,
+        "startChar": 20,
+        "endLine": 124,
+        "endChar": 39
+      },
+      "revId": "86882cdf8d757c62d32b76f49ff1597b6c2f21ee",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b47515d8_4868fb14",
         "filename": "BUILD.gn",
         "patchSetId": 4
@@ -37,6 +61,30 @@
       "writtenOn": "2023-02-27T23:07:01Z",
       "side": 1,
       "message": "secure_tc_vhe ?",
+      "range": {
+        "startLine": 179,
+        "startChar": 20,
+        "endLine": 179,
+        "endChar": 29
+      },
+      "revId": "86882cdf8d757c62d32b76f49ff1597b6c2f21ee",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b33408f_59f42087",
+        "filename": "BUILD.gn",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-02-28T08:45:43Z",
+      "side": 1,
+      "message": "Provided that VHE enabled is now the standard for most if not all configs, I\u0027d prefer keeping the name short as there is no longer a need to differentiate.\nMoreover, similarly above, changing the name now would break the Arm solutions TC build flow.",
+      "parentUuid": "b47515d8_4868fb14",
       "range": {
         "startLine": 179,
         "startChar": 20,
