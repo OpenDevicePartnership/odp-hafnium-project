@@ -34,6 +34,24 @@
       "parentUuid": "6a9f35c6_623631a7",
       "revId": "d9aefc0fb394264002894747669925fc2e3dc047",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfd4526c_7d3463a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000996
+      },
+      "writtenOn": "2023-03-03T13:25:00Z",
+      "side": 1,
+      "message": "I have added the companion patch https://review.trustedfirmware.org/c/hafnium/hafnium/+/19859",
+      "parentUuid": "ed59a5d8_b79c352c",
+      "revId": "d9aefc0fb394264002894747669925fc2e3dc047",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
