@@ -183,6 +183,30 @@
       },
       "revId": "d9aefc0fb394264002894747669925fc2e3dc047",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f00d252e_e8e5b4b7",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1000996
+      },
+      "writtenOn": "2023-03-08T12:04:44Z",
+      "side": 1,
+      "message": "https://review.trustedfirmware.org/c/TF-A/trusted-firmware-a/+/19793 --\u003e these are my changes in tfa for remapping the logs",
+      "parentUuid": "397835a8_f5d0f7aa",
+      "range": {
+        "startLine": 193,
+        "startChar": 26,
+        "endLine": 193,
+        "endChar": 36
+      },
+      "revId": "d9aefc0fb394264002894747669925fc2e3dc047",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
