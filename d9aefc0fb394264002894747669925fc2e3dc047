@@ -159,6 +159,30 @@
       },
       "revId": "d9aefc0fb394264002894747669925fc2e3dc047",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "397835a8_f5d0f7aa",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1000996
+      },
+      "writtenOn": "2023-03-08T07:02:39Z",
+      "side": 1,
+      "message": "Can you take the trusted firmware-a changes as well and then try as they are interdependent...",
+      "parentUuid": "5bd586c7_022a31dd",
+      "range": {
+        "startLine": 193,
+        "startChar": 26,
+        "endLine": 193,
+        "endChar": 36
+      },
+      "revId": "d9aefc0fb394264002894747669925fc2e3dc047",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
