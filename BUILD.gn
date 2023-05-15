@@ -16,6 +16,7 @@ group("root") {
     "//src:hafnium(:secure_qemu_aarch64_clang)",
     "//src:hafnium(:secure_tc_clang)",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_vhe_clang)",
+    "//src/arch/aarch64/qemuloader:bl_secure(:secure_qemu_aarch64_clang)",
   ]
 }
 
@@ -31,6 +32,7 @@ group("test_root") {
     "//test/linux(:qemu_aarch64_vhe_vm_clang)",
     "//test/linux(:rpi4_vm_clang)",
     "//test/vmapi:partitions(:secure_aem_v8a_fvp_vhe_vm_clang)",
+    "//test/vmapi:partitions_qemu(:secure_qemu_aarch64_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vhe_vm_clang)",
     "//test/vmapi(:rpi4_vm_clang)",
@@ -140,6 +142,7 @@ aarch64_toolchains("secure_qemu_aarch64") {
     secure_world = "1"
     pl011_base_address = "0x09000000"
     hftest_ctrl = "//test/hftest:ctrl_uart"
+    hftest_device = "//project/reference/secure_qemu_aarch64:device_psci"
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
     plat_num_virtual_interrupts_ids = 1024
