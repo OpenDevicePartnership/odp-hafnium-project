@@ -52,6 +52,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   cpu = "cortex-a57"
   origin_address = "0x06000000"
   boot_flow = "//src/boot_flow:spmc"
+  plat_hooks = "//src/arch/plat_hooks:absent"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
@@ -80,6 +81,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   cpu = "cortex-a57"
   origin_address = "0x80000000"
   boot_flow = "//src/boot_flow:linux"
+  plat_hooks = "//src/arch/plat_hooks:absent"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
@@ -103,6 +105,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
   cpu = "cortex-a57"
   origin_address = "0x40001000"
   boot_flow = "//src/boot_flow:linux"
+  plat_hooks = "//src/arch/plat_hooks:absent"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
   gic_version = 3
@@ -123,6 +126,7 @@ aarch64_toolchains("secure_qemu_aarch64") {
   cpu = "cortex-a57"
   origin_address = "0xe100000"
   boot_flow = "//src/boot_flow:spmc"
+  plat_hooks = "//src/arch/plat_hooks:absent"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
   gic_version = 3
@@ -150,6 +154,7 @@ aarch64_toolchains("rpi4") {
   cpu = "cortex-a72"
   origin_address = "0x80000"
   boot_flow = "//src/boot_flow:linux"
+  plat_hooks = "//src/arch/plat_hooks:absent"
   console = "//project/reference/rpi:mini_uart"
   iommu = "//src/iommu:absent"
   gic_version = 2
@@ -178,6 +183,7 @@ aarch64_toolchains("secure_tc") {
   cpu = "cortex-a57"
   origin_address = "0xfd000000"
   boot_flow = "//src/boot_flow:spmc"
+  plat_hooks = "//src/arch/plat_hooks:absent"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
   gic_version = 4
