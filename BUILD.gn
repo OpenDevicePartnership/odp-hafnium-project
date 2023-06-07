@@ -52,7 +52,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   cpu = "cortex-a57"
   origin_address = "0x06000000"
   boot_flow = "//src/boot_flow:spmc"
-  plat_hooks = "//src/arch/plat_hooks:absent"
+  plat_hooks = "//src/arch/plat_hooks:arm"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
