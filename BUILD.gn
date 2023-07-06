@@ -150,7 +150,7 @@ aarch64_toolchains("rpi4") {
   cpu = "cortex-a72"
   origin_address = "0x80000"
   boot_flow = "//src/boot_flow:linux"
-  console = "//project/reference/rpi:mini_uart"
+  console = "//project/reference/rpi4:mini_uart"
   iommu = "//src/iommu:absent"
   gic_version = 2
   heap_pages = 180
