@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab3e25e0_f3868179",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2023-08-16T15:56:48Z",
+      "side": 1,
+      "message": "Should we use a more generic name like arm_rd or arm_rd_sys ?\nThis would remove the need to add yet another platform on a next iteration?\nHopefully build parameters wouldn\u0027t change.",
+      "range": {
+        "startLine": 58,
+        "startChar": 27,
+        "endLine": 58,
+        "endChar": 37
+      },
+      "revId": "b70583bea8e297f03cccdbea813d0160b5408127",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
