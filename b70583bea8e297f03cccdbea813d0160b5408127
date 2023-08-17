@@ -62,6 +62,30 @@
       },
       "revId": "b70583bea8e297f03cccdbea813d0160b5408127",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8d44a46_bcec6cd8",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000793
+      },
+      "writtenOn": "2023-08-17T07:50:40Z",
+      "side": 1,
+      "message": "GICD, GICR MAX CPUs are different across the platforms. That is why I added a plat specific name. For example, we also have another multichip version and max cpus number is different for it.\nIt will be good if these params are passed thru manifest.",
+      "parentUuid": "ab3e25e0_f3868179",
+      "range": {
+        "startLine": 58,
+        "startChar": 27,
+        "endLine": 58,
+        "endChar": 37
+      },
+      "revId": "b70583bea8e297f03cccdbea813d0160b5408127",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
