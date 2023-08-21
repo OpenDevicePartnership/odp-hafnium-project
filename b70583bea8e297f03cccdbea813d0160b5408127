@@ -24,6 +24,30 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cef94f59_7e16233e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000793
+      },
+      "writtenOn": "2023-08-21T22:11:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fa1bee56_cd5cc92b",
+      "range": {
+        "startLine": 7,
+        "startChar": 40,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "b70583bea8e297f03cccdbea813d0160b5408127",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "79d31749_4c1cd609",
@@ -37,6 +61,24 @@
       "writtenOn": "2023-08-16T15:58:39Z",
       "side": 1,
       "message": "Should add the platform supports S-EL2 and hence run Hafnium/SPMC which is the intent for adding a new platform to this project?",
+      "revId": "b70583bea8e297f03cccdbea813d0160b5408127",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b13c494_b02da5d2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000793
+      },
+      "writtenOn": "2023-08-21T22:11:36Z",
+      "side": 1,
+      "message": "Updated the comment. Please check.",
+      "parentUuid": "79d31749_4c1cd609",
       "revId": "b70583bea8e297f03cccdbea813d0160b5408127",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
