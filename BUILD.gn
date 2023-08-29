@@ -87,6 +87,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
+  gic_enable_espi = 1
   gicd_base_address = "0x2f000000"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
@@ -104,7 +105,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
     smmu_memory_size = "0x100000"
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
-    plat_num_virtual_interrupts_ids = 1024
+    plat_num_virtual_interrupts_ids = 5119
   }
 }
 
