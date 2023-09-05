@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a339cb1_dbcc63f4",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2023-09-05T13:26:28Z",
+      "side": 1,
+      "message": "Is SMMUv3 IP not present in RD Fremont?",
+      "revId": "d0ff6a6d3e8c94ca532d117266f17d31679c8678",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
