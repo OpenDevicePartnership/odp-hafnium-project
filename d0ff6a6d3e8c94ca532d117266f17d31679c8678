@@ -24,6 +24,30 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ec368cd_d20c2a81",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000793
+      },
+      "writtenOn": "2023-09-05T13:35:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "be1c9820_439a9565",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "d0ff6a6d3e8c94ca532d117266f17d31679c8678",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6a339cb1_dbcc63f4",
@@ -37,6 +61,24 @@
       "writtenOn": "2023-09-05T13:26:28Z",
       "side": 1,
       "message": "Is SMMUv3 IP not present in RD Fremont?",
+      "revId": "d0ff6a6d3e8c94ca532d117266f17d31679c8678",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff231ec1_5f99453a",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1000793
+      },
+      "writtenOn": "2023-09-05T13:35:36Z",
+      "side": 1,
+      "message": "It is not used by the SP",
+      "parentUuid": "6a339cb1_dbcc63f4",
       "revId": "d0ff6a6d3e8c94ca532d117266f17d31679c8678",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
