@@ -110,6 +110,7 @@ aarch64_toolchains("secure_rd_fremont") {
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
     plat_num_virtual_interrupts_ids = 1024
+    plat_partition_max_dma_devices = 4
   }
 }
 
