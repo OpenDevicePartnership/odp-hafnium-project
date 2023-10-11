@@ -164,6 +164,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
     enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
     plat_num_virtual_interrupts_ids = 5120
+    plat_partition_max_dma_devices = 1
   }
 }
 
