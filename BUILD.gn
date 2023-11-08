@@ -89,6 +89,7 @@ aarch64_toolchains("secure_rd_fremont") {
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
+  memory_protect = "//src/arch/aarch64/memory_protect:memory_protect"
   gic_version = 4
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x301C0000"
@@ -114,6 +115,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
+  memory_protect = "//src/arch/aarch64/memory_protect:memory_protect"
   gic_version = 3
   gic_enable_espi = 1
   gicd_base_address = "0x2f000000"
@@ -141,6 +143,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   cpu = "cortex-a57"
   origin_address = "0x80000000"
   boot_flow = "//src/boot_flow:linux"
+  memory_protect = "//src/memory_protect:absent"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
@@ -166,6 +169,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
   boot_flow = "//src/boot_flow:linux"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
+  memory_protect = "//src/memory_protect:absent"
   gic_version = 3
   gicd_base_address = "0x08000000"
   gicr_base_address = "0x080A0000"
@@ -183,6 +187,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
 aarch64_toolchains("secure_qemu_aarch64") {
   cpu = "cortex-a57"
   origin_address = "0xe100000"
+  memory_protect = "//src/memory_protect:absent"
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
@@ -212,6 +217,7 @@ aarch64_toolchains("rpi4") {
   origin_address = "0x80000"
   boot_flow = "//src/boot_flow:linux"
   console = "//project/reference/rpi4:mini_uart"
+  memory_protect = "//src/memory_protect:absent"
   iommu = "//src/iommu:absent"
   gic_version = 2
   heap_pages = 180
@@ -237,6 +243,7 @@ aarch64_toolchains("secure_tc") {
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
+  memory_protect = "//src/memory_protect:absent"
   gic_version = 4
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x30080000"
