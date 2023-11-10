@@ -16,6 +16,24 @@
       "message": "A change to documentation would be good to go with these patches, referring to the platform option.",
       "revId": "7e6459392f56c174e2de7198ab14ebea44b069b0",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06281bf2_11635de4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2023-11-10T15:40:31Z",
+      "side": 1,
+      "message": "Saw you had a similar comment in the hafnium/hafnium change.",
+      "parentUuid": "301b0a20_351be9d5",
+      "revId": "7e6459392f56c174e2de7198ab14ebea44b069b0",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
