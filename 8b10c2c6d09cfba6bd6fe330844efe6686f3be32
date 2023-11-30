@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "378c7520_f56b6db0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000263
+      },
+      "writtenOn": "2023-11-30T12:03:27Z",
+      "side": 1,
+      "message": "feat(rd)",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 4
+      },
+      "revId": "8b10c2c6d09cfba6bd6fe330844efe6686f3be32",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25e42d87_135f93f9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000263
+      },
+      "writtenOn": "2023-11-30T12:03:27Z",
+      "side": 1,
+      "message": "secure hafnium build for rdfremontcfg1",
+      "range": {
+        "startLine": 7,
+        "startChar": 6,
+        "endLine": 8,
+        "endChar": 1
+      },
+      "revId": "8b10c2c6d09cfba6bd6fe330844efe6686f3be32",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d5792567_fcb87190",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000263
+      },
+      "writtenOn": "2023-11-30T12:03:27Z",
+      "side": 1,
+      "message": "Add hafnium build support for RD-Fremont-Cfg1 platform. FVP version of RD-Fremont-Cfg1 support 8 CPUs with 8 GICR frames.\n\n\n(This patch isn\u0027t modifying RD-Fremont right?)",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 1
+      },
+      "revId": "8b10c2c6d09cfba6bd6fe330844efe6686f3be32",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed9fb3df_a68e6b85",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1000263
+      },
+      "writtenOn": "2023-11-30T12:03:27Z",
+      "side": 1,
+      "message": "8",
+      "range": {
+        "startLine": 125,
+        "startChar": 16,
+        "endLine": 125,
+        "endChar": 18
+      },
+      "revId": "8b10c2c6d09cfba6bd6fe330844efe6686f3be32",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47515f69_10b9d79d",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1000263
+      },
+      "writtenOn": "2023-11-30T12:03:27Z",
+      "side": 1,
+      "message": "8",
+      "range": {
+        "startLine": 127,
+        "startChar": 13,
+        "endLine": 127,
+        "endChar": 15
+      },
+      "revId": "8b10c2c6d09cfba6bd6fe330844efe6686f3be32",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9edc5ce8_f63ca34f",
+        "filename": "BUILD.gn",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1000263
+      },
+      "writtenOn": "2023-11-30T12:03:27Z",
+      "side": 1,
+      "message": "8",
+      "range": {
+        "startLine": 128,
+        "startChar": 12,
+        "endLine": 128,
+        "endChar": 14
+      },
+      "revId": "8b10c2c6d09cfba6bd6fe330844efe6686f3be32",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
