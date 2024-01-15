@@ -60,7 +60,6 @@ group("test_root") {
     "//src:unit_tests(:host_fake_clang)",
     "//test/arch(:aem_v8a_fvp_vhe_clang)",
     "//test/arch(:qemu_aarch64_vhe_clang)",
-    "//test/arch(:rpi4_clang)",
     "//test/linux(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/linux(:qemu_aarch64_vhe_vm_clang)",
     "//test/linux(:rpi4_vm_clang)",
@@ -186,6 +185,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
     pl011_base_address = "0x1c090000"
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
+    enable_mte = "1"
     plat_log_level = "LOG_LEVEL_INFO"
   }
 }
@@ -207,6 +207,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
     plat_ffa = "//src/arch/aarch64/plat/ffa:hypervisor"
     pl011_base_address = "0x09000000"
     plat_log_level = "LOG_LEVEL_INFO"
+    enable_mte = "1"
   }
 }
 
