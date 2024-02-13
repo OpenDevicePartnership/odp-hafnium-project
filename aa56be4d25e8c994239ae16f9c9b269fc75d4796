@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5d966683_cdc3e1ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2024-02-13T14:04:29Z",
+      "side": 1,
+      "message": "Please rebase and update counterpart submodule hash in hafnium/hafnium. Thanks.",
+      "revId": "aa56be4d25e8c994239ae16f9c9b269fc75d4796",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
