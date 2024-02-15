@@ -1,0 +1,9 @@
+Code-Review+2: Madhukar Pappireddy <madhukar.pappireddy@arm.com>
+Code-Review-1: Olivier Deprez <olivier.deprez@arm.com>
+Code-Review+1: Vishnu <vishnu.banavath@arm.com>
+Submitted-by: Olivier Deprez <olivier.deprez@arm.com>
+Submitted-at: Thu, 15 Feb 2024 16:57:16 +0100
+Reviewed-on: https://review.trustedfirmware.org/c/hafnium/project/reference/+/19800
+Comments-Total: 14
+Project: hafnium/project/reference
+Branch: refs/heads/master
