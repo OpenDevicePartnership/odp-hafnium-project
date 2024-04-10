@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "277de993_78fa2b97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001165
+      },
+      "writtenOn": "2024-04-10T10:28:06Z",
+      "side": 1,
+      "message": "Added max_chips variable only for rdfremont platforms",
+      "revId": "fd2f6b69e17ddae0cdc138e367cedd17d6ea1a94",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
