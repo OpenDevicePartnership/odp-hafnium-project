@@ -33,6 +33,24 @@
       "message": "You should add project/reference git submodule commit hash fd2f6b69e17ddae0cdc138e367cedd17d6ea1a94 to https://review.trustedfirmware.org/c/hafnium/hafnium/+/27804\n\nso that top tree references to the submodule change",
       "revId": "fd2f6b69e17ddae0cdc138e367cedd17d6ea1a94",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a7aaa57_1775ef5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001165
+      },
+      "writtenOn": "2024-04-10T13:06:55Z",
+      "side": 1,
+      "message": "Updated project reference to the required commit",
+      "parentUuid": "26381bb0_77776032",
+      "revId": "fd2f6b69e17ddae0cdc138e367cedd17d6ea1a94",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
