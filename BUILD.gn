@@ -101,6 +101,7 @@ aarch64_toolchains("secure_rd_fremont") {
   gicr_frames = 16
   heap_pages = 180
   max_cpus = 16
+  max_chips = 16
   max_vms = 16
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
@@ -127,6 +128,7 @@ aarch64_toolchains("secure_rd_fremont_cfg1") {
   gicr_frames = 8
   heap_pages = 180
   max_cpus = 8
+  max_chips = 16
   max_vms = 8
   toolchain_args = {
     plat_ffa = "//src/arch/aarch64/plat/ffa:spmc"
