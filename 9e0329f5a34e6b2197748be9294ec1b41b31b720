@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e304abbe_bb6be7cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2024-08-27T15:34:11Z",
+      "side": 1,
+      "message": "A corresponding patch is required in hafnium to update the project/reference submodule commit.",
+      "revId": "9e0329f5a34e6b2197748be9294ec1b41b31b720",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
