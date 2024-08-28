@@ -16,6 +16,24 @@
       "message": "A corresponding patch is required in hafnium to update the project/reference submodule commit.",
       "revId": "9e0329f5a34e6b2197748be9294ec1b41b31b720",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7e9b182_52730164",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000457
+      },
+      "writtenOn": "2024-08-28T06:23:21Z",
+      "side": 1,
+      "message": "pushed now - https://review.trustedfirmware.org/c/hafnium/hafnium/+/30777?usp\u003ddashboard",
+      "parentUuid": "e304abbe_bb6be7cc",
+      "revId": "9e0329f5a34e6b2197748be9294ec1b41b31b720",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
