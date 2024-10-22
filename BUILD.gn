@@ -31,12 +31,12 @@ group("secure_tc") {
   deps = [ "//src:hafnium(:secure_tc_clang)" ]
 }
 
-group("secure_rd_fremont") {
-  deps = [ "//src:hafnium(:secure_rd_fremont_clang)" ]
+group("secure_rd_v3") {
+  deps = [ "//src:hafnium(:secure_rd_v3_clang)" ]
 }
 
-group("secure_rd_fremont_cfg1") {
-  deps = [ "//src:hafnium(:secure_rd_fremont_cfg1_clang)" ]
+group("secure_rd_v3_cfg1") {
+  deps = [ "//src:hafnium(:secure_rd_v3_cfg1_clang)" ]
 }
 
 group("root") {
@@ -46,8 +46,8 @@ group("root") {
     ":rpi4",
     ":secure_aem_v8a_fvp_vhe",
     ":secure_qemu_aarch64",
-    ":secure_rd_fremont",
-    ":secure_rd_fremont_cfg1",
+    ":secure_rd_v3",
+    ":secure_rd_v3_cfg1",
     ":secure_tc",
     "//src/arch/aarch64/qemuloader:bl(:qemu_aarch64_vhe_clang)",
   ]
@@ -81,11 +81,11 @@ host_toolchain("host_fake") {
 
 # RD (Reference Design) is a collection of resources to provide a representative
 # view of typical compute subsystems that can be designed and implemented using
-# specific generations of Arm IP. RD-Fremont is the first RD platform with Realm
+# specific generations of Arm IP. RD-V3 is the first RD platform with Realm
 # Management Extension (RME) support.
 # For more information please refer:
-# https://neoverse-reference-design.docs.arm.com/en/latest/platforms/rdfremont/readme.html
-aarch64_toolchains("secure_rd_fremont") {
+# https://neoverse-reference-design.docs.arm.com/en/latest/platforms/rdv3.html
+aarch64_toolchains("secure_rd_v3") {
   cpu = "cortex-a57"
   origin_address = "0xF9000000"
   boot_flow = "//src/boot_flow:spmc"
@@ -111,7 +111,7 @@ aarch64_toolchains("secure_rd_fremont") {
   }
 }
 
-aarch64_toolchains("secure_rd_fremont_cfg1") {
+aarch64_toolchains("secure_rd_v3_cfg1") {
   cpu = "cortex-a57"
   origin_address = "0xF9000000"
   boot_flow = "//src/boot_flow:spmc"
