@@ -26,6 +26,30 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "9853a11f_0ffa3691",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2024-10-30T11:39:25Z",
+      "side": 1,
+      "message": "Follow through the main commit in hafnium repo.",
+      "parentUuid": "5be8e8bc_5b78e324",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "48400e8263fcdeb26b4f8a79775e675ad1d771e8",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "eaebafd7_0c55b1b7",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 1
