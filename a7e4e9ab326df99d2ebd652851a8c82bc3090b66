@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e8b5056_d2308ea6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000341
+      },
+      "writtenOn": "2024-12-09T14:31:33Z",
+      "side": 1,
+      "message": "This change needs an equivalent counterpart in the Hafnium main repo.\nThis is changing the project/reference submodule.\nSo we need to track the submodule\u0027s commit hash.",
+      "revId": "a7e4e9ab326df99d2ebd652851a8c82bc3090b66",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
