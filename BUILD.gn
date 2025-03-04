@@ -11,6 +11,10 @@ group("aem_v8a_fvp_vhe") {
   deps = [ "//src:hafnium(:aem_v8a_fvp_vhe_clang)" ]
 }
 
+group("aem_v8a_fvp_vhe_ffa_v1_1") {
+  deps = [ "//src:hafnium(:aem_v8a_fvp_vhe_ffa_v1_1_clang)" ]
+}
+
 group("qemu_aarch64_vhe") {
   deps = [ "//src:hafnium(:qemu_aarch64_vhe_clang)" ]
 }
@@ -42,6 +46,7 @@ group("secure_rd_fremont_cfg1") {
 group("root") {
   deps = [
     ":aem_v8a_fvp_vhe",
+    ":aem_v8a_fvp_vhe_ffa_v1_1",
     ":qemu_aarch64_vhe",
     ":rpi4",
     ":secure_aem_v8a_fvp_vhe",
@@ -59,9 +64,11 @@ group("test_root") {
   deps = [
     "//src:unit_tests(:host_fake_clang)",
     "//test/arch(:aem_v8a_fvp_vhe_clang)",
+    "//test/arch(:aem_v8a_fvp_vhe_ffa_v1_1_clang)",
     "//test/arch(:qemu_aarch64_vhe_clang)",
     "//test/arch(:rpi4_clang)",
     "//test/vmapi:partitions(:secure_aem_v8a_fvp_vhe_vm_clang)",
+    "//test/vmapi(:aem_v8a_fvp_vhe_ffa_v1_1_vm_clang)",
     "//test/vmapi(:aem_v8a_fvp_vhe_vm_clang)",
     "//test/vmapi(:qemu_aarch64_vhe_vm_clang)",
     "//test/vmapi(:rpi4_vm_clang)",
@@ -184,6 +191,31 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   max_vms = 16
   branch_protection = "standard"
   toolchain_args = {
+    ffa_role = "//src/ffa:hypervisor"
+    pl011_base_address = "0x1c090000"
+    smmu_base_address = "0x2b400000"
+    smmu_memory_size = "0x100000"
+    plat_log_level = "LOG_LEVEL_INFO"
+  }
+}
+
+aarch64_toolchains("aem_v8a_fvp_vhe_ffa_v1_1") {
+  cpu = "cortex-a57"
+  origin_address = "0x80000000"
+  boot_flow = "//src/boot_flow:linux"
+  memory_protect = "//src/memory_protect:absent"
+  console = "//src/arch/aarch64/pl011"
+  iommu = "//src/arch/aarch64/arm_smmuv3"
+  gic_version = 3
+  gicd_base_address = "0x2f000000"
+  gicr_base_address = "0x2f100000"
+  gicr_frames = 8
+  heap_pages = 180
+  max_cpus = 8
+  max_vms = 16
+  branch_protection = "standard"
+  toolchain_args = {
+    ffa_version = "0x10001"
     ffa_role = "//src/ffa:hypervisor"
     pl011_base_address = "0x1c090000"
     smmu_base_address = "0x2b400000"
