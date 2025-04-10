@@ -93,7 +93,7 @@ host_toolchain("host_fake") {
 # For more information please refer:
 # https://neoverse-reference-design.docs.arm.com/en/latest/platforms/rdv3.html
 aarch64_toolchains("secure_rd_v3") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0xF9000000"
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
@@ -119,7 +119,7 @@ aarch64_toolchains("secure_rd_v3") {
 }
 
 aarch64_toolchains("secure_rd_v3_cfg1") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0xF9000000"
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
@@ -145,7 +145,7 @@ aarch64_toolchains("secure_rd_v3_cfg1") {
 }
 
 aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0x06000000"
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
@@ -176,7 +176,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
 }
 
 aarch64_toolchains("aem_v8a_fvp_vhe") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0x80000000"
   boot_flow = "//src/boot_flow:linux"
   memory_protect = "//src/memory_protect:absent"
@@ -192,7 +192,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   branch_protection = "standard"
   toolchain_args = {
     ffa_role = "//src/ffa:hypervisor"
-    pl011_base_address = "0x1c0a0000" #UART1 for Hypervisor
+    pl011_base_address = "0x1c0a0000"  #UART1 for Hypervisor
     smmu_base_address = "0x2b400000"
     smmu_memory_size = "0x100000"
     plat_log_level = "LOG_LEVEL_INFO"
@@ -200,7 +200,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
 }
 
 aarch64_toolchains("aem_v8a_fvp_vhe_ffa_v1_1") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0x80000000"
   boot_flow = "//src/boot_flow:linux"
   memory_protect = "//src/memory_protect:absent"
@@ -225,7 +225,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe_ffa_v1_1") {
 }
 
 aarch64_toolchains("qemu_aarch64_vhe") {
-  cpu = "cortex-a57"
+  march = "armv8.1-a"
   origin_address = "0x40001000"
   boot_flow = "//src/boot_flow:linux"
   console = "//src/arch/aarch64/pl011"
@@ -246,7 +246,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
 }
 
 aarch64_toolchains("secure_qemu_aarch64") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0xe100000"
   memory_protect = "//src/memory_protect:absent"
   boot_flow = "//src/boot_flow:spmc"
@@ -274,7 +274,7 @@ aarch64_toolchains("secure_qemu_aarch64") {
 }
 
 aarch64_toolchains("rpi4") {
-  cpu = "cortex-a72"
+  march = "armv8.1-a"
   origin_address = "0x80000"
   boot_flow = "//src/boot_flow:linux"
   console = "//project/reference/rpi4:mini_uart"
@@ -299,7 +299,7 @@ aarch64_toolchains("rpi4") {
 # the Total Compute Fixed Virtual Platform (FVP) are found here:
 # https://totalcompute.docs.arm.com/en/latest/
 aarch64_toolchains("secure_tc") {
-  cpu = "cortex-a57"
+  march = "armv8.5-a"
   origin_address = "0xfd000000"
   boot_flow = "//src/boot_flow:spmc"
   console = "//src/arch/aarch64/pl011"
