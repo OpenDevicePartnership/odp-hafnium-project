@@ -106,6 +106,7 @@ aarch64_toolchains("secure_rd_v3") {
   heap_pages = 180
   max_cpus = 16
   max_vms = 16
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   toolchain_args = {
     ffa_role = "//src/ffa:spmc"
     plat_psci = "//src/arch/aarch64/plat/psci:spmc"
@@ -125,6 +126,7 @@ aarch64_toolchains("secure_rd_v3_cfg1") {
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
   memory_protect = "//src/arch/aarch64/memory_protect:memory_protect"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   gic_version = 4
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x30100000"
@@ -151,6 +153,7 @@ aarch64_toolchains("secure_aem_v8a_fvp_vhe") {
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   memory_protect = "//src/arch/aarch64/memory_protect:memory_protect"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   gic_version = 3
   gic_enable_espi = 1
   gicd_base_address = "0x2f000000"
@@ -180,6 +183,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe") {
   origin_address = "0x80000000"
   boot_flow = "//src/boot_flow:linux"
   memory_protect = "//src/memory_protect:absent"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
@@ -208,6 +212,7 @@ aarch64_toolchains("aem_v8a_fvp_vhe_ffa_v1_1") {
   iommu = "//src/arch/aarch64/arm_smmuv3"
   gic_version = 3
   gicd_base_address = "0x2f000000"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   gicr_base_address = "0x2f100000"
   gicr_frames = 8
   heap_pages = 180
@@ -231,6 +236,7 @@ aarch64_toolchains("qemu_aarch64_vhe") {
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
   memory_protect = "//src/memory_protect:absent"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   gic_version = 3
   gicd_base_address = "0x08000000"
   gicr_base_address = "0x080A0000"
@@ -255,6 +261,7 @@ aarch64_toolchains("secure_qemu_aarch64") {
   gic_version = 3
   gicd_base_address = "0x08000000"
   gicr_base_address = "0x080A0000"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   gicr_frames = 8
   heap_pages = 180
   max_cpus = 8
@@ -279,6 +286,7 @@ aarch64_toolchains("rpi4") {
   boot_flow = "//src/boot_flow:linux"
   console = "//project/reference/rpi4:mini_uart"
   memory_protect = "//src/memory_protect:absent"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   iommu = "//src/iommu:absent"
   gic_version = 2
   heap_pages = 180
@@ -305,6 +313,7 @@ aarch64_toolchains("secure_tc") {
   console = "//src/arch/aarch64/pl011"
   iommu = "//src/iommu:absent"
   memory_protect = "//src/memory_protect:absent"
+  memory_alloc = "//src/memory_alloc:memory_alloc"
   gic_version = 4
   gicd_base_address = "0x30000000"
   gicr_base_address = "0x30080000"
