@@ -8,7 +8,6 @@
 
 #include "hf/io.h"
 #include "hf/mm.h"
-#include "hf/mpool.h"
 #include "hf/plat/console.h"
 
 /* clang-format off */
@@ -73,15 +72,14 @@ void plat_console_init(void)
 	memory_ordering_barrier();
 }
 
-void plat_console_mm_init(struct mm_stage1_locked stage1_locked,
-			  struct mpool *ppool)
+void plat_console_mm_init(struct mm_stage1_locked stage1_locked)
 {
 	mm_identity_map(stage1_locked, pa_init(GPIO_BASE),
 			pa_add(pa_init(GPIO_BASE), PAGE_SIZE),
-			MM_MODE_R | MM_MODE_W | MM_MODE_D, ppool);
+			MM_MODE_R | MM_MODE_W | MM_MODE_D);
 	mm_identity_map(stage1_locked, pa_init(AUX_BASE),
 			pa_add(pa_init(AUX_BASE), PAGE_SIZE),
-			MM_MODE_R | MM_MODE_W | MM_MODE_D, ppool);
+			MM_MODE_R | MM_MODE_W | MM_MODE_D);
 }
 
 void plat_console_putchar(char c)
