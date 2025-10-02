@@ -37,11 +37,11 @@ void plat_console_init(void)
 
 	selector = io_read32(GPFSEL1);
 	/* Set GPIO14 to function 5. */
-	selector &= ~(7 << 12);
-	selector |= 2 << 12;
+	selector &= ~(7U << 12);
+	selector |= 2U << 12;
 	/* Set GPIO15 to function 5 */
-	selector &= ~(7 << 15);
-	selector |= 2 << 15;
+	selector &= ~(7U << 15);
+	selector |= 2U << 15;
 	io_write32(GPFSEL1, selector);
 
 	/*
