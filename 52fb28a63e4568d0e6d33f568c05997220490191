@@ -16,6 +16,24 @@
       "message": "Is it mandatory to specify the implementation if src/memory_alloc also happens to be the default choice?",
       "revId": "52fb28a63e4568d0e6d33f568c05997220490191",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "09074c29_7e0f606b",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2025-12-16T11:14:44Z",
+      "side": 1,
+      "message": "Yes its mandatory.\n\nReason:\nLets say we comment it out, the build fails as below:\n\n```\nERROR at //build/toolchain/embedded.gni:305:35: No value named \"memory_alloc\" in scope \"invoker\" plat_memory_alloc \u003d invoker.memory_alloc ^----------- See //build/toolchain/embedded.gni:333:3: whence it was called. aarch64_common_toolchain(\"${target_name}\") { ^------------------------------------------- See //build/toolchain/embedded.gni:342:3: whence it was called. aarch64_toolchain(\"${target_name}\") { ^------------------------------------ See //project/reference/BUILD.gn:181:1: whence it was called. aarch64_toolchains(\"aem_v8a_fvp_vhe\") { ^-------------------------------------- See //BUILD.gn:12:12: which caused the file to be included. deps \u003d [ \"//project/${project}:root\" ] ^-------------------------- make: *** [Makefile:119: out/reference/build.ninja] Error 1\n\n```\n\nThis implies that the template requires memory_alloc to be passed explicitly.\nIt has no default value and the global plat_memory_alloc only works after we pass this param explicitly for each toolchain.\n\nSee this line in (embedded.gni) file:\n      plat_memory_alloc \u003d invoker.memory_alloc\n  \nThe template in embedded.gni requires every toolchain to pass a memory_alloc parameter.\nIf its omitted, GN fails with: “No value named memory_alloc in scope invoker.”\nSo specifying memory_alloc \u003d \"//src/memory_alloc:memory_alloc\" is mandatory.\n\nHope this helps. Please close the comment, if you are ok with it.",
+      "parentUuid": "4cc32d28_4a483cc5",
+      "revId": "52fb28a63e4568d0e6d33f568c05997220490191",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
