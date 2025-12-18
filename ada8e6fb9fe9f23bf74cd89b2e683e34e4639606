@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e07e7ca_c4638d4d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2025-12-18T17:35:48Z",
+      "side": 1,
+      "message": "when branch protection is not needed by the target, what would be the march choice for SPMC? armv8.4?",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 39
+      },
+      "revId": "ada8e6fb9fe9f23bf74cd89b2e683e34e4639606",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "532384a4_634edc07",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1000098
+      },
+      "writtenOn": "2025-12-18T17:35:48Z",
+      "side": 1,
+      "message": "Is this because in NWd world, VHE extensions were available starting v8.1?",
+      "range": {
+        "startLine": 226,
+        "startChar": 2,
+        "endLine": 226,
+        "endChar": 21
+      },
+      "revId": "ada8e6fb9fe9f23bf74cd89b2e683e34e4639606",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    }
+  ]
+}
