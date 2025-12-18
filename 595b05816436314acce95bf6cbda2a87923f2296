@@ -16,6 +16,23 @@
       "message": "Hi is this change still required?",
       "revId": "595b05816436314acce95bf6cbda2a87923f2296",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51608f43_013b7ddc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2025-12-18T11:36:20Z",
+      "side": 1,
+      "message": "Yes. It was an intermediate patch to assist Lucas work. But he didn\u0027t pick this bit due to other tasks. No harm in closing this for now.\n\nThanks!",
+      "revId": "595b05816436314acce95bf6cbda2a87923f2296",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ],
   "submitRequirementResults": []
