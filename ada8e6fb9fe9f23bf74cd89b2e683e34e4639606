@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "60176882_57b86ba5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2026-01-07T13:02:57Z",
+      "side": 1,
+      "message": "I guess we could use Armv8.4, yes. Although this is much theoretical as I\u0027m not sure there really exists any Armv8.4 silicon. Afair FEAT_SEL2 started to appear from Armv9.0 (aka Armv8.5 compliant) silicon.",
+      "parentUuid": "3e07e7ca_c4638d4d",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 39
+      },
+      "revId": "ada8e6fb9fe9f23bf74cd89b2e683e34e4639606",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "532384a4_634edc07",
         "filename": "BUILD.gn",
         "patchSetId": 2
@@ -37,6 +61,30 @@
       "writtenOn": "2025-12-18T17:35:48Z",
       "side": 1,
       "message": "Is this because in NWd world, VHE extensions were available starting v8.1?",
+      "range": {
+        "startLine": 226,
+        "startChar": 2,
+        "endLine": 226,
+        "endChar": 21
+      },
+      "revId": "ada8e6fb9fe9f23bf74cd89b2e683e34e4639606",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d45a8757_85c55b29",
+        "filename": "BUILD.gn",
+        "patchSetId": 2
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2026-01-07T13:02:57Z",
+      "side": 1,
+      "message": "I read from Arm ARM FEAT_VHE is optional from Armv8.0.\nAnd from Armv8.1 FEAT_VHE is implemented when FEAT_AA64EL2 is implemented.",
+      "parentUuid": "532384a4_634edc07",
       "range": {
         "startLine": 226,
         "startChar": 2,
