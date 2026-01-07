@@ -45,6 +45,29 @@
       },
       "revId": "4ced2f8cb3847023cf17971c391281efe4dde9e7",
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7bf89f8_446a5929",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1000660
+      },
+      "writtenOn": "2026-01-07T15:31:36Z",
+      "side": 1,
+      "message": "Overall LGTM.\nOne small clarification: qemu_aarch64_vhe is set to armv8.1-a, while the other toolchains use armv8.5-a.\nCould you please confirm that this is intentional?",
+      "range": {
+        "startLine": 226,
+        "startChar": 11,
+        "endLine": 226,
+        "endChar": 18
+      },
+      "revId": "4ced2f8cb3847023cf17971c391281efe4dde9e7",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     }
   ]
 }
