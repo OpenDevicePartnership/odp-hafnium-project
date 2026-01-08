@@ -24,6 +24,30 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "db059ffc_f4bbcb6a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2026-01-08T14:07:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "23fa7155_6bc8a657",
+      "range": {
+        "startLine": 7,
+        "startChar": 25,
+        "endLine": 7,
+        "endChar": 27
+      },
+      "revId": "4ced2f8cb3847023cf17971c391281efe4dde9e7",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "31ba2beb_db81729c",
@@ -47,6 +71,30 @@
       "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d806b00_12db8139",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2026-01-08T14:07:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "31ba2beb_db81729c",
+      "range": {
+        "startLine": 11,
+        "startChar": 60,
+        "endLine": 11,
+        "endChar": 72
+      },
+      "revId": "4ced2f8cb3847023cf17971c391281efe4dde9e7",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7bf89f8_446a5929",
@@ -60,6 +108,30 @@
       "writtenOn": "2026-01-07T15:31:36Z",
       "side": 1,
       "message": "Overall LGTM.\nOne small clarification: qemu_aarch64_vhe is set to armv8.1-a, while the other toolchains use armv8.5-a.\nCould you please confirm that this is intentional?",
+      "range": {
+        "startLine": 226,
+        "startChar": 11,
+        "endLine": 226,
+        "endChar": 18
+      },
+      "revId": "4ced2f8cb3847023cf17971c391281efe4dde9e7",
+      "serverId": "8f6f209b-db1a-4cbf-aa44-c8bc30e9bfda"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de49f660_4204747f",
+        "filename": "BUILD.gn",
+        "patchSetId": 3
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1000228
+      },
+      "writtenOn": "2026-01-08T14:07:24Z",
+      "side": 1,
+      "message": "This is for running hypervisor tests in normal world, secure world is not exercised in such case, and hence we need not more than Armv8.1.\n\nfor others specifying Armv8.5 , this is for running the SPMC in the secure world so need at least Armv8.4 FEAT_SEL2",
+      "parentUuid": "d7bf89f8_446a5929",
       "range": {
         "startLine": 226,
         "startChar": 11,
